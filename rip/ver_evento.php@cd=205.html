@@ -4,12 +4,17 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>VonMuller</title>
 		<link href="estilo.css" type="text/css" rel="stylesheet" rev="stylesheet" />
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			_uacct = "UA-2242386-3";
+			urchinTracker();
+		</script>
 		<script language="javascript">
 			var saiu = 0;
 			var intervalo;
 			var count = 0;
 			var intervalofade;
-	
+
 			function start(){
 				count = 0;
 				saiu = 0;
@@ -34,12 +39,10 @@
 				document.getElementById("menu_9").style.visibility = "hidden";
 								document.getElementById("menu_10").innerHTML = "";
 				document.getElementById("menu_10").style.visibility = "hidden";
-								document.getElementById("menu_11").innerHTML = "";
-				document.getElementById("menu_11").style.visibility = "hidden";
 							}
 					function mostramenu6(){
 				escondemenu();
-				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">';
+				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+'</table>';
 
 				document.getElementById("menu_6").style.position = "absolute";
 				document.getElementById("menu_6").style.zIndex = "99999";
@@ -48,7 +51,7 @@
 			}
 						function mostramenu7(){
 				escondemenu();
-				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=6.html#7">Veja Alguns Videos</a></li></td></tr>';
+				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=6#7">Veja Alguns Videos</a></li></td></tr>'+'</table>';
 document.getElementById("menu_7").innerHTML = html;
 				document.getElementById("menu_7").style.position = "absolute";
 				document.getElementById("menu_7").style.zIndex = "99999";
@@ -57,7 +60,7 @@ document.getElementById("menu_7").innerHTML = html;
 			}
 						function mostramenu8(){
 				escondemenu();
-				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=4.html#3">Veja Alguns Exemplos</a></li></td></tr>';
+				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=4#3">Veja Alguns Exemplos</a></li></td></tr>'+'</table>';
 document.getElementById("menu_8").innerHTML = html;
 				document.getElementById("menu_8").style.position = "absolute";
 				document.getElementById("menu_8").style.zIndex = "99999";
@@ -66,7 +69,7 @@ document.getElementById("menu_8").innerHTML = html;
 			}
 						function mostramenu9(){
 				escondemenu();
-				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=5&amp;subsecao=6.html">Nossos Produtos E Serviços!</a></li></td></tr>';
+				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=5&amp;subsecao=6">Nossos Produtos E Serviços!</a></li></td></tr>'+'</table>';
 document.getElementById("menu_9").innerHTML = html;
 				document.getElementById("menu_9").style.position = "absolute";
 				document.getElementById("menu_9").style.zIndex = "99999";
@@ -75,415 +78,455 @@ document.getElementById("menu_9").innerHTML = html;
 			}
 						function mostramenu10(){
 				escondemenu();
-				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=1&amp;subsecao=2.html">Albuns</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=1&amp;subsecao=4.html">Convites</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=1&amp;subsecao=5.html">Filmagens Em Dvd</a></li></td></tr>';
+				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=1&amp;subsecao=2">Albuns</a></li></td></tr>'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=1&amp;subsecao=4">Convites</a></li></td></tr>'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=1&amp;subsecao=5">Filmagens Em Dvd</a></li></td></tr>'+'</table>';
 document.getElementById("menu_10").innerHTML = html;
 				document.getElementById("menu_10").style.position = "absolute";
 				document.getElementById("menu_10").style.zIndex = "99999";
 				document.getElementById("menu_10").style.visibility = "visible";
 				document.getElementById("menu_10").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
 			}
-						function mostramenu11(){
-				escondemenu();
-				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=14.html">Books</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=12.html">Contato</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=16.html">Equipe</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=15.html">Filmagem</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=8.html">Início</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=13.html">Orçamento</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=10.html">Portfólio</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=9.html">Produtos</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=11.html">Serviços</a></li></td></tr>';
-document.getElementById("menu_11").innerHTML = html;
-				document.getElementById("menu_11").style.position = "absolute";
-				document.getElementById("menu_11").style.zIndex = "99999";
-				document.getElementById("menu_11").style.visibility = "visible";
-				document.getElementById("menu_11").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
-			}
 					</script>
 	</head>
 	<body>
 		<table width="100%" cellpadding="0" cellspacing="0" border="0">
 			<tr>
-				<td width="43" height="60" background="imagens/filme1.jpg">&nbsp;</td>
+				<td height="60" background="imagens/filme1.jpg">&nbsp;</td>
+			</tr>
+			<tr>
+				<td height="150" align="center">
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="920" height="150" id="cabecalho" align="middle">
+						<param name="allowScriptAccess" value="sameDomain" />
+						<param name="movie" value="imagens/cabecalho.swf" />
+						<param name="quality" value="high" />
+						<param name="bgcolor" value="#000000" />
+						<embed src="imagens/cabecalho.swf" quality="high" bgcolor="#000000" width="920" height="150" name="cabecalho" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+					</object>
+				</td>
 			</tr>
 			<tr>
 				<td height="100%" align="center" valign="top">
 					<table>
 						<tr>
-							<td width="147" valign="top"><img align="absmiddle" src="imagens/logo.jpg" />
-								<table width="147" cellpadding="0" cellspacing="0">
+							<td width="147" valign="top">
+								<table width="147" cellpadding="0" cellspacing="0" style="background-image:url(imagens/fundo_conteudo.jpg); background-repeat:repeat-x; background-color:#FFFFFF; background-position:bottom; border-left:#999999 5px solid; border-right:#999999 5px solid;">
 									<tr>
-										<td width="147" height="31" background="imagens/cabecalho_menu.jpg">&nbsp;</td>
+										<td>&nbsp;</td>
 									</tr>
 									<tr>
-										<td background="imagens/fundo_menu.jpg" align="left" style="padding-left:25px;">
-											<a class="menuesquerdo" href="index.html">Home</a><br />
-											<a class="menuesquerdo" href="agenda.php.html">Agenda</a><br />
-											<a class="menuesquerdo" href="eventos.php.html">Eventos</a><br />
-																								
-																						</td>
+										<td>&nbsp;</td>
 									</tr>
 									<tr>
-										<td width="147" height="34" background="imagens/rodape_menu.jpg">&nbsp;</td>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
+											<a class="menuesquerdo" href="home.php.html" onmouseover="escondemenu();">Home</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
+											<a class="menuesquerdo" href="agenda.php.html" onmouseover="escondemenu();">Agenda</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
+											<a class="menuesquerdo" href="eventos.php.html" onmouseover="escondemenu();">Eventos</a><br />
+										</td>
+									</tr>
+																				<tr>
+												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
+													<a class="menuesquerdo" onMouseOver="mostramenu6();" href="secao.php@secao=7.html">book</a><span id="menu_6" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
+												</td>
+											</tr>
+																					<tr>
+												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
+													<a class="menuesquerdo" onMouseOver="mostramenu7();" href="secao.php@secao=6.html">Making Of</a><span id="menu_7" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
+												</td>
+											</tr>
+																					<tr>
+												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
+													<a class="menuesquerdo" onMouseOver="mostramenu8();" href="secao.php@secao=4.html">Montagens</a><span id="menu_8" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
+												</td>
+											</tr>
+																					<tr>
+												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
+													<a class="menuesquerdo" onMouseOver="mostramenu9();" href="secao.php@secao=5.html">Portfólio</a><span id="menu_9" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
+												</td>
+											</tr>
+																					<tr>
+												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
+													<a class="menuesquerdo" onMouseOver="mostramenu10();" href="secao.php@secao=1.html">Produtos</a><span id="menu_10" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
+												</td>
+											</tr>
+																			<tr>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
+											<a class="menuesquerdo" href="contato.php.html" onmouseover="escondemenu();">Contato</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" align="center">
+											<br /><br /><br />
+										</td>
 									</tr>
 								</table>
+								<img src="imagens/fundo_menu.gif" />
 							</td>
 							<td width="770">
-								<table width="100%" cellpadding="0" cellspacing="0" border="0">
+								<table width="100%" cellpadding="20" cellspacing="0" border="0">
 									<tr>
-										<td colspan="3" height="80" style="font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:20px; font-weight:bold;">Wander Von Muller - Fotógrafo Profissional</td>
-									</tr>
-									<tr>
-										<td colspan="3"><img src="imagens/cabecalho.jpg" /></td>
-									</tr>
-									<tr>
-										<td width="72" background="imagens/esq.jpg">&nbsp;</td>
-										<td width="600" background="imagens/fundo.jpg">
-		<div>Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.</div>
+										<td style="background-image:url(imagens/fundo_conteudo.jpg); background-repeat:repeat-x; background-color:#FFFFFF; background-position:bottom; border-left:#999999 5px solid; border-right:#999999 5px solid;"><br /><br />
 		<table width="100%">
 		<tr>
 			<td width="100%" valign="top" align="center">
-					<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="index.html">[HOME]</a>&nbsp;-&nbsp;<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="agenda.php.html">[AGENDA]</a>&nbsp;-&nbsp;<a class="menurodape" style="font-weight: normal; font-size: 11px;">[Casamento&nbsp;de&nbsp;Ana Paula  e Helio]</a>
+					<script language="javascript">
+		var w;
+	</script>
+	<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="http://localhost/home.php">[HOME]</a>&nbsp;-&nbsp;<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="agenda.php.html">[AGENDA]</a>&nbsp;-&nbsp;<a class="menurodape" style="font-weight: normal; font-size: 11px;">[Casamento&nbsp;de&nbsp;Ana Paula  e Helio]</a>
 	<hr>
-	<div>Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.</div>
+	<div align="left"></div>
+	<div align="left">
+		<b>Local: </b>Bkr eventos.	</div><br /><br />
 		<div class="titulosecao"><img align="bottom" src="imagens/bullet_silver.gif">&nbsp;Clique na foto para ampliar</div><br>
+	<div class="titulosecao"><img align="bottom" src="imagens/bullet_silver.gif">&nbsp;<a href="ver_evento.php@cd=205.html#" onclick="window.open('slideshow.php?cd=205', null, 'height=333,width=500,status=no,toolbar=no');">Ver Fotos Em Slides</a></div><br>
+	
 	<table width="100%" cellspacing="5" cellpadding="0" border="0"><tr>
 			<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064272.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064272.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064272.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064272.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064273.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064273.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064273.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064273.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064274.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064274.jpg"><br>
-					</td>
-		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064275.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064275.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064276.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064276.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064277.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064277.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064278.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064278.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064274.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064274.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064279.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064279.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064275.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064275.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064280.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064280.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064276.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064276.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064281.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064281.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064277.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064277.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064282.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064282.jpg"><br>
-					</td>
-		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064283.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064283.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064284.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064284.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064285.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064285.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064286.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064286.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064278.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064278.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064287.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064287.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064279.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064279.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064288.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064288.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064280.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064280.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064289.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064289.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064281.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064281.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064290.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064290.jpg"><br>
-					</td>
-		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064291.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064291.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064292.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064292.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064293.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064293.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064294.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064294.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064282.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064282.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064295.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064295.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064283.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064283.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064296.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064296.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064284.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064284.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064297.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064297.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064285.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064285.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064298.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064298.jpg"><br>
-					</td>
-		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064299.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064299.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064300.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064300.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064301.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064301.jpg"><br>
-					</td>
-				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064302.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064302.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064286.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064286.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064303.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064303.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064287.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064287.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064304.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064304.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064288.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064288.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064305.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064305.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064289.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064289.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064306.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064306.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064290.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064290.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064307.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064307.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064291.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064291.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064308.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064308.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064292.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064292.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064309.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064309.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064293.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064293.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064310.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064310.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064294.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064294.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064311.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064311.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064295.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064295.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064312.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064312.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064296.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064296.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064313.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064313.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064297.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064297.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064314.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064314.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064298.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064298.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064315.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064315.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064299.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064299.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064316.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064316.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064300.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064300.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064317.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064317.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064301.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064301.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064318.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064318.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064302.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064302.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064319.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064319.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064303.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064303.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064320.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064320.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064304.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064304.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064321.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064321.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064305.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064305.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064322.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064322.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064306.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064306.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064323.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064323.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064307.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064307.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064324.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064324.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064308.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064308.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064325.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064325.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064309.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064309.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064326.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064326.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064310.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064310.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064327.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064327.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064311.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064311.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064328.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064328.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064312.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064312.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064329.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064329.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064313.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064313.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064330.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064330.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064314.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064314.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064331.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064331.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064315.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064315.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064332.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064332.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064316.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064316.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064333.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064333.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064317.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064317.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064334.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064334.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064318.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064318.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064335.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064335.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064319.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064319.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064336.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064336.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064320.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064320.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064337.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064337.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064321.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064321.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064338.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064338.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064322.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064322.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064339.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064339.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064323.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064323.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064340.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064340.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064324.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064324.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064341.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064341.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064325.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064325.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064342.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064342.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064326.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064326.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064343.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064343.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064327.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064327.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064344.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064344.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064328.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064328.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064345.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064345.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064329.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064329.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064346.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064346.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064330.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064330.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064347.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064347.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064331.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064331.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064348.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064348.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064332.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064332.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064349.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064349.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064333.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064333.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064350.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064350.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064334.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064334.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064351.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064351.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064335.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064335.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064352.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064352.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064336.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064336.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064353.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064353.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064337.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064337.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064354.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064354.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064338.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064338.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064355.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064355.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064339.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064339.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064356.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064356.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064340.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064340.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064357.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064357.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064341.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064341.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064358.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064358.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064342.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064342.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064359.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064359.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064343.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064343.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064360.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064360.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064344.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064344.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064361.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064361.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064345.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064345.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064362.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064362.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064346.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064346.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064363.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064363.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064347.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064347.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064364.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064364.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064348.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064348.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064365.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064365.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064349.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064349.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064366.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064366.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064350.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064350.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064367.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064367.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064351.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064351.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064368.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064368.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064352.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064352.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064369.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064369.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064353.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064353.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064370.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064370.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064354.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064354.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064371.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064371.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064355.jpg', 'Fotografia', 'width=500,height=375,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064355.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064372.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064372.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064356.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064356.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064373.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064373.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064357.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064357.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064374.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064374.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064358.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064358.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064375.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064375.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064359.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064359.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064376.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064376.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064360.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064360.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064377.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064377.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064361.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064361.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064378.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064378.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064362.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064362.jpg"><br>
 					</td>
 		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064379.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064379.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064363.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064363.jpg"><br>
 					</td>
 				<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/205_1994064380.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_205_1994064380.jpg"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064364.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064364.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064365.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064365.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064366.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064366.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064367.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064367.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064368.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064368.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064369.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064369.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064370.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064370.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064371.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064371.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064372.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064372.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064373.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064373.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064374.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064374.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064375.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064375.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064376.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064376.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064377.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064377.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064378.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064378.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064379.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064379.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('fotos/205_1994064380.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="fotos/thumb/thumb_205_1994064380.jpg"><br>
 					</td>
 		</tr></table>
 				</td>
 		</tr>
 	</table>
-									</td>
-										<td width="98" background="imagens/dir.jpg">&nbsp;</td>
-									</tr>
-									<tr>
-										<td colspan="3"><img src="imagens/rodape.jpg" /></td>
-									</tr>
-								</table>
+			<br /><br /><br /><br /><center><b>&ordm;&nbsp;Von Muller Fotografia e Filmagem&nbsp;&ordm;</b><br />Rua Santo Agostinho, 96 - Sala 01 - Guanabara - Joinville - SC<br /><a href="mailto: faleconcosco@vonmuller.com">faleconosco@vonmuller.com</a><br />(47) 3465.2943/9126.0414</center>
+										</td>
+								</table><img src="imagens/fundo_conteudo2.gif" />
 							</td>
 						</tr>
-					</table>					
+					</table>
 				</td>
 			</tr>
 			<tr>

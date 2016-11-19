@@ -8,9 +8,6 @@ if(!$restrito) {
 	$query = "SELECT * FROM eventos, tipodeevento WHERE eventos.tipo=tipodeevento.cd AND eventos.cd=" . $cd_evento;
 	$result = mysql_query($query) or die("Erro de conexão ao banco de dados: " . mysql_error());
 	$evento = mysql_fetch_array($result, MYSQL_ASSOC);
-	?>
-	<div><?=$evento["descricao"]?></div>
-	<?
 	if(($evento["status"] == 1) && (strlen($evento["listadecasamento"]) != 0)){
 		?>
 		<div class="titulosecao">Lista de Presentes:<br><a href="<?=$evento["listadecasamento"]?>"><?=$evento["listadecasamento"]?></a></div><br>
@@ -140,9 +137,15 @@ function constroi_fotos_evento($codigo_evento, $colunas){
 	$result = mysql_query($query) or die("Erro de conexão ao banco de dados: " . mysql_error());
 	$evento = mysql_fetch_array($result, MYSQL_ASSOC);
 	?>
-	<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="/">[HOME]</a>&nbsp;-&nbsp;<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="<? if($evento["status"] == "1") echo("agenda.php"); else echo("eventos.php"); ?>">[<? if($evento["status"] == "1") echo("AGENDA"); else echo("EVENTOS"); ?>]</a>&nbsp;-&nbsp;<a class="menurodape" style="font-weight: normal; font-size: 11px;">[<?=$evento["tipo"]?>&nbsp;de&nbsp;<?=$evento["nomes"]?>]</a>
+	<script language="javascript">
+		var w;
+	</script>
+	<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="/home.php">[HOME]</a>&nbsp;-&nbsp;<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="<? if($evento["status"] == "1") echo("agenda.php"); else echo("eventos.php"); ?>">[<? if($evento["status"] == "1") echo("AGENDA"); else echo("EVENTOS"); ?>]</a>&nbsp;-&nbsp;<a class="menurodape" style="font-weight: normal; font-size: 11px;">[<?=$evento["tipo"]?>&nbsp;de&nbsp;<?=$evento["nomes"]?>]</a>
 	<hr>
-	<div><?=$evento["descricao"]?></div>
+	<div align="left"><?=$evento["descricao"]?></div>
+	<div align="left">
+		<? if(strlen($evento["local"]) != 0) echo("<b>Local: </b>" . $evento["local"]); ?>
+	</div><br /><br />
 	<?
 		if(($evento["status"] == 1) && (strlen($evento["listadecasamento"]) != 0)){
 			?>
@@ -151,6 +154,8 @@ function constroi_fotos_evento($codigo_evento, $colunas){
 		}
 	?>
 	<div class="titulosecao"><img align="bottom" src="imagens/bullet_silver.gif">&nbsp;Clique na foto para ampliar</div><br>
+	<div class="titulosecao"><img align="bottom" src="imagens/bullet_silver.gif">&nbsp;<a href="#" onclick="window.open('slideshow.php?cd=<?=$codigo_evento?>', null, 'height=333,width=500,status=no,toolbar=no');">Ver Fotos Em Slides</a></div><br>
+	
 	<table width="100%" cellspacing="5" cellpadding="0" border="0"><tr>
 	<?
 	$query = "SELECT cd, path, path_thumb, largura, altura FROM fotos WHERE cd_evento=" . $codigo_evento . " ORDER BY cd";
@@ -158,7 +163,7 @@ function constroi_fotos_evento($codigo_evento, $colunas){
 	while($foto = mysql_fetch_array($result, MYSQL_ASSOC)){
 		?>
 		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: void window.open('ver_imagem.php?imagem=<?=urlencode($foto["path"])?>', 'Fotografia', 'width=<?=$foto["largura"]?>,height=<?=$foto["altura"]?>,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="<?=$foto["path_thumb"]?>"><br>
+			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('ver_imagem.php?imagem=<?=urlencode($foto["path"])?>', 'Fotografia', 'width=<?=$foto["largura"]?>,height=<?=$foto["altura"]?>,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="<?=$foto["path_thumb"]?>"><br>
 			<?=$foto["descricao"]?>
 		</td>
 		<?

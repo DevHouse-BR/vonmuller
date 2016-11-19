@@ -8,12 +8,17 @@ function inicia_pagina(){
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>VonMuller</title>
 		<link href="estilo.css" type="text/css" rel="stylesheet" rev="stylesheet" />
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			_uacct = "UA-2242386-3";
+			urchinTracker();
+		</script>
 		<script language="javascript">
 			var saiu = 0;
 			var intervalo;
 			var count = 0;
 			var intervalofade;
-	
+
 			function start(){
 				count = 0;
 				saiu = 0;
@@ -31,7 +36,7 @@ function inicia_pagina(){
 			<?
 			$counter = 6;
 			require("conectar_mysql.php");
-			$result = mysql_query("SELECT cd FROM nomedesecao");
+			$result = mysql_query("SELECT cd FROM nomedesecao where cd <> 8");
 			while($secao = mysql_fetch_assoc($result)){
 				?>
 				document.getElementById("menu_<?=$counter?>").innerHTML = "";
@@ -45,19 +50,19 @@ function inicia_pagina(){
 		<?
 		$counter = 6;
 		require("conectar_mysql.php");
-		$result = mysql_query("SELECT * FROM nomedesecao ORDER BY nome");
+		$result = mysql_query("SELECT * FROM nomedesecao where cd <> 8 ORDER BY nome");
 		while($secao = mysql_fetch_assoc($result)){
 			?>
 			function mostramenu<?=$counter?>(){
 				escondemenu();
-				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'<?
+				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'<?
 				require("conectar_mysql.php");
 				$result2 = mysql_query("SELECT cd, titulo FROM secoes WHERE nomedesecao=" . $secao["cd"] . " ORDER BY titulo");
 				while($subsecao = mysql_fetch_assoc($result2)){
-					if($secao["pgseparadas"] == "n") echo("+ '<tr><td width=\"5\">&nbsp;</td><td><li><a class=\"menuesquerdo\" href=\"secao.php?secao=" . $secao["cd"] . "#" . $subsecao["cd"] . "\">" . ucwords(strtolower($subsecao["titulo"])) . "</a></li></td></tr>'");
-					else echo("+ '<tr><td width=\"5\">&nbsp;</td><td><li><a class=\"menuesquerdo\" href=\"secao.php?secao=" . $secao["cd"] . "&subsecao=" . $subsecao["cd"] . "\">" . ucwords(strtolower($subsecao["titulo"])) . "</a></li></td></tr>'");
+					if($secao["pgseparadas"] == "n") echo("+ '<tr><td>&nbsp;</td><td align=\"left\"><li><a class=\"menuesquerdo\" href=\"/secao.php?secao=" . $secao["cd"] . "#" . $subsecao["cd"] . "\">" . ucwords(strtolower($subsecao["titulo"])) . "</a></li></td></tr>'");
+					else echo("+ '<tr><td>&nbsp;</td><td align=\"left\"><li><a class=\"menuesquerdo\" href=\"/secao.php?secao=" . $secao["cd"] . "&subsecao=" . $subsecao["cd"] . "\">" . ucwords(strtolower($subsecao["titulo"])) . "</a></li></td></tr>'");
 				}
-				echo(";" . "\n");
+				echo("+'</table>';" . "\n");
 				require("desconectar_mysql.php");
 				if(mysql_num_rows($result2) != 0) echo('document.getElementById("menu_' . $counter . '").innerHTML = html;');
 				echo("\n");
@@ -76,55 +81,86 @@ function inicia_pagina(){
 	<body>
 		<table width="100%" cellpadding="0" cellspacing="0" border="0">
 			<tr>
-				<td width="43" height="60" background="imagens/filme1.jpg">&nbsp;</td>
+				<td height="60" background="imagens/filme1.jpg">&nbsp;</td>
+			</tr>
+			<tr>
+				<td height="150" align="center">
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="920" height="150" id="cabecalho" align="middle">
+						<param name="allowScriptAccess" value="sameDomain" />
+						<param name="movie" value="imagens/cabecalho.swf" />
+						<param name="quality" value="high" />
+						<param name="bgcolor" value="#000000" />
+						<embed src="imagens/cabecalho.swf" quality="high" bgcolor="#000000" width="920" height="150" name="cabecalho" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+					</object>
+				</td>
 			</tr>
 			<tr>
 				<td height="100%" align="center" valign="top">
 					<table>
 						<tr>
-							<td width="147" valign="top"><img align="absmiddle" src="imagens/logo.jpg" />
-								<table width="147" cellpadding="0" cellspacing="0">
+							<td width="147" valign="top">
+								<table width="147" cellpadding="0" cellspacing="0" style="background-image:url(imagens/fundo_conteudo.jpg); background-repeat:repeat-x; background-color:#FFFFFF; background-position:bottom; border-left:#999999 5px solid; border-right:#999999 5px solid;">
 									<tr>
-										<td width="147" height="31" background="imagens/cabecalho_menu.jpg">&nbsp;</td>
+										<td>&nbsp;</td>
 									</tr>
 									<tr>
-										<td background="imagens/fundo_menu.jpg" align="left" style="padding-left:25px;">
-											<a class="menuesquerdo" href="/">Home</a><br />
-											<a class="menuesquerdo" href="agenda.php">Agenda</a><br />
-											<a class="menuesquerdo" href="eventos.php">Eventos</a><br />
-											<?
-											$counter = 6;
-											require("conectar_mysql.php");
-											$result = mysql_query("SELECT * FROM nomedesecao ORDER BY nome");
-											while($secao = mysql_fetch_assoc($result)){
-												if($secao["pgseparadas"] == "n"){?>
-													<a class="menuesquerdo" onMouseOver="mostramenu<?=$counter?>();" href="secao.php?secao=<?=$secao["cd"]?>"><?=$secao["nome"]?></a><br />
-												<? }
-												else echo('<span class="menuesquerdo">' . $secao["nome"] . '</span><br>'); ?>
-												<span id="menu_<?=$counter?>" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
-												<?
-												$counter++;
-											}
-											require("desconectar_mysql.php");
-											?>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
+											<a class="menuesquerdo" href="home.php" onmouseover="escondemenu();">Home</a>
 										</td>
 									</tr>
 									<tr>
-										<td width="147" height="34" background="imagens/rodape_menu.jpg">&nbsp;</td>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
+											<a class="menuesquerdo" href="agenda.php" onmouseover="escondemenu();">Agenda</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
+											<a class="menuesquerdo" href="eventos.php" onmouseover="escondemenu();">Eventos</a><br />
+										</td>
+									</tr>
+									<?
+									$counter = 6;
+									require("conectar_mysql.php");
+									$result = mysql_query("SELECT * FROM nomedesecao where cd <> 8 ORDER BY nome");
+									while($secao = mysql_fetch_assoc($result)){
+										if($secao["pgseparadas"] == "n"){?>
+											<tr>
+												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
+													<a class="menuesquerdo" onMouseOver="mostramenu<?=$counter?>();" href="secao.php?secao=<?=$secao["cd"]?>"><?=$secao["nome"]?></a><span id="menu_<?=$counter?>" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
+												</td>
+											</tr>
+										<? }
+										else { ?>
+											<tr>
+												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
+													<a class="menuesquerdo" onMouseOver="mostramenu<?=$counter?>();" href="secao.php?secao=<?=$secao["cd"]?>"><?=$secao["nome"]?></a><span id="menu_<?=$counter?>" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
+												</td>
+											</tr>
+										<? }
+										$counter++;
+									}
+									require("desconectar_mysql.php");
+									?>
+									<tr>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
+											<a class="menuesquerdo" href="contato.php" onmouseover="escondemenu();">Contato</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" align="center">
+											<br /><br /><br />
+										</td>
 									</tr>
 								</table>
+								<img src="imagens/fundo_menu.gif" />
 							</td>
 							<td width="770">
-								<table width="100%" cellpadding="0" cellspacing="0" border="0">
+								<table width="100%" cellpadding="20" cellspacing="0" border="0">
 									<tr>
-										<td colspan="3" height="80" style="font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:20px; font-weight:bold;">Wander Von Muller - Fotógrafo Profissional</td>
-									</tr>
-									<tr>
-										<td colspan="3"><img src="imagens/cabecalho.jpg" /></td>
-									</tr>
-									<tr>
-										<td width="72" background="imagens/esq.jpg">&nbsp;</td>
-										<td width="600" background="imagens/fundo.jpg">
+										<td style="background-image:url(imagens/fundo_conteudo.jpg); background-repeat:repeat-x; background-color:#FFFFFF; background-position:bottom; border-left:#999999 5px solid; border-right:#999999 5px solid;"><br /><br />
 	<?
 }
 
@@ -132,16 +168,12 @@ function inicia_pagina(){
 
 function termina_pagina(){
 	?>
-								</td>
-										<td width="98" background="imagens/dir.jpg">&nbsp;</td>
-									</tr>
-									<tr>
-										<td colspan="3"><img src="imagens/rodape.jpg" /></td>
-									</tr>
-								</table>
+		<br /><br /><br /><br /><center><b>&ordm;&nbsp;Von Muller Fotografia e Filmagem&nbsp;&ordm;</b><br />Rua Santo Agostinho, 96 - Sala 01 - Guanabara - Joinville - SC<br /><a href="mailto: faleconcosco@vonmuller.com">faleconosco@vonmuller.com</a><br />(47) 3465.2943/9126.0414</center>
+										</td>
+								</table><img src="imagens/fundo_conteudo2.gif" />
 							</td>
 						</tr>
-					</table>					
+					</table>
 				</td>
 			</tr>
 			<tr>
@@ -164,8 +196,21 @@ function admin($funcao){
 	$html = str_replace("imagens/", "../imagens/", $html);
 	$html = str_replace("img/", "../img/", $html);
 	$html = str_replace("fotos/", "../fotos/", $html);
-	echo(str_replace('<a class="menuesquerdo" href="agenda.php">Agenda</a><br />
-											<a class="menuesquerdo" href="eventos.php">Eventos</a><br />', '<a class="menuesquerdo" href="eventos.php">Agenda e Eventos</a><br><a class="menuesquerdo" href="secoes.php">Gerenciar Seções</a>', $html));
+	$html = str_replace('<tr>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor=\'#AAAAAA\'; this.style.filter = \'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)\'; this.style.position = \'relative\';" onmouseout="this.style.backgroundColor=\'\'; this.style.filter = \'\'; this.style.position = \'\';">
+											<a class="menuesquerdo" href="agenda.php" onmouseover="escondemenu();">Agenda</a>
+										</td>
+									</tr>
+									<tr>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor=\'#AAAAAA\'; this.style.filter = \'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)\'; this.style.position = \'relative\';" onmouseout="this.style.backgroundColor=\'\'; this.style.filter = \'\'; this.style.position = \'\';">
+											<a class="menuesquerdo" href="eventos.php" onmouseover="escondemenu();">Eventos</a><br />
+										</td>
+									</tr>', '<tr><td height="20" align="center" onmouseover="this.style.backgroundColor=\'#AAAAAA\'; this.style.filter = \'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)\'; this.style.position = \'relative\';" onmouseout="this.style.backgroundColor=\'\'; this.style.filter = \'\'; this.style.position = \'\';"><a class="menuesquerdo" href="eventos.php">Agenda e Eventos</a></td></tr><tr>
+										<td height="20" align="center" onmouseover="this.style.backgroundColor=\'#AAAAAA\'; this.style.filter = \'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)\'; this.style.position = \'relative\';" onmouseout="this.style.backgroundColor=\'\'; this.style.filter = \'\'; this.style.position = \'\';">
+											<a class="menuesquerdo" href="secoes.php" onmouseover="escondemenu();">Gerenciar Seções</a><br />
+										</td>
+									</tr>', $html);
+	echo($html);
 	flush();
 }
 
@@ -307,17 +352,14 @@ function constroi_destaque_eventos($numerodedestaques, $colunas){
 			$result2 = mysql_query($query);
 			$imagem = mysql_fetch_row($result2);
 			?>
-			<td width="33%" align="center" valign="top">
-				<table width="100%" border="0" height="180" style="border: solid 1px #808080;" bgcolor="#E4D4BA">
+			<td align="center" valign="top">
+				<table width="100%" border="0" height="120" style="border: solid 1px #808080;" bgcolor="#DDDDDD">
 					<tr>
 						<td height="93" align="center" valign="top"><a href="ver_evento.php?cd=<?=$evento["cd"]?>"><img border="0" src="<?=$imagem[0]?>"></a></td>
 					</tr>
 					<tr>
 						<td class="celula" valign="top">
-							<?
-							if(strlen($evento["pginicial"] == 0)) echo(substr($evento["descricao"], 0, 150) . "...");
-							else echo(substr($evento["pginicial"], 0, 150) . "...");
-							?>
+							<?=date("d/m/Y",$evento["data"])?>
 						</td>
 					</tr>
 					<!--<tr>
@@ -361,18 +403,14 @@ function constroi_destaque_agenda($numerodedestaques, $colunas){
 			$result2 = mysql_query($query);
 			$imagem = mysql_fetch_row($result2);
 			?>
-			<td width="33%" align="center" valign="top" <?=$style?>>
-				<table width="100%" border="0" height="180" style="border: solid 1px #808080;" bgcolor="#E4D4BA">
+			<td align="center" valign="top" <?=$style?>>
+				<table width="100%" border="0" height="120" style="border: solid 1px #808080;" bgcolor="#DDDDDD">
 					<tr>
 						<td height="93" align="center" valign="top"><a href="ver_evento.php?cd=<?=$evento["cd"]?>"><img border="0" src="<?=$imagem[0]?>"></a></td>
 					</tr>
 					<tr>
 						<td class="celula" valign="top">
-							<span style="font-weight: bold; color: #000000;"><?=date("d/m/Y", $evento["data"])?></span><br>
-							<?
-							if(strlen($evento["pginicial"] == 0)) echo(substr($evento["descricao"], 0, 150) . "...");
-							else echo(substr($evento["pginicial"], 0, 150) . "...");
-							?>
+							<?=date("d/m/Y",$evento["data"])?>
 						</td>
 					</tr>
 					<!--<tr>

@@ -16,7 +16,7 @@ $result = mysql_query($query) or die("Erro de conexão ao banco de dados: " . mys
 $texto = mysql_fetch_row($result);
 require("../desconectar_mysql.php");
 require("../editor.php");
-$editor = new editorHTML("600px", "300px", "/vonmuller/estilo_editor.css", "home", 0);?>
+$editor = new editorHTML("600px", "300px", "/estilo_editor.css", "home", 0);?>
 <hr>
 <div class="titulosecao">&nbsp;&nbsp;<img align="absmiddle" src="../imagens/bullet_silver.gif">&nbsp;<a class="menuesquerdo" href="<?=$agenda?>">Agenda</a></div><br>
 <? admin('constroi_destaque_agenda(3, 3);'); ?>

@@ -51,7 +51,7 @@
 			
 			if($WATERMARK){
 				$watermark = imagecreatefrompng("../imagens/watermark.png");
-				imagecopy($nova_imagem, $watermark, ($nova_largura_img - 180), ($nova_altura_img - 38), 0, 0, 180, 34);
+				imagecopy($nova_imagem, $watermark, ($nova_largura_img - 122), ($nova_altura_img - 57), 0, 0, 122, 57);
 			}
 						
 			$nova_imagem_grande = $IMG_ROOT . "/" . $nome_da_imagem;
@@ -69,9 +69,15 @@
 				$nova_largura_thumb = $imagem_largura * $fator_proporcao;
 				$nova_altura_thumb = $imagem_altura * $fator_proporcao;
 				
-
-				$nova_imagem = imagecreatetruecolor($nova_largura_thumb,$nova_altura_thumb) or die($HTML_RETORNO3); 
-				imagecopyresampled($nova_imagem, $imagem_original, 0, 0, 0, 0, $nova_largura_thumb, $nova_altura_thumb, $imagem_largura, $imagem_altura) or die($HTML_RETORNO4); 
+				
+				if($imagem_largura > $imagem_altura){
+					$nova_imagem = imagecreatetruecolor(120, 90) or die($HTML_RETORNO3); 
+					imagecopyresampled($nova_imagem, $imagem_original, 0, 0, 0, 0, 120, 90, $imagem_largura, $imagem_altura) or die($HTML_RETORNO4); 
+				}
+				else{
+					$nova_imagem = imagecreatetruecolor(120, 90) or die($HTML_RETORNO3); 
+					imagecopyresampled($nova_imagem, $imagem_original, 0, 0, 0, 0, 120, 90, $imagem_largura, ($imagem_altura/2)) or die($HTML_RETORNO4);
+				}
 				
 				$nova_imagem_thumb = $IMG_ROOT . "/" . $THUMB_ROOT . "thumb_" . $nome_da_imagem;
 				

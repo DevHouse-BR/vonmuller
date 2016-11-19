@@ -79,7 +79,7 @@ admin("inicia_pagina();");
 						</form>
 					</tr>
 					<tr>
-						<td colspan="2">
+						<td colspan="2" align="left">
 						<script language="javascript" type="text/javascript">
 							function mostra_conteudo_<?=$nomedesecao["cd"]?>(){
 								if (document.all['<?=str_replace(" ", "", $nomedesecao["nome"]) . $nomedesecao["cd"]?>'].innerHTML == ""){

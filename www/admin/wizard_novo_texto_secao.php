@@ -25,6 +25,12 @@ function constroi_passo0(){
 	if($modo == "update"){
 		$codigo = $_REQUEST["cd"];
 		$update = true;
+		require("../conectar_mysql.php");
+		$query = "SELECT * FROM secoes where cd=" . $codigo;
+		$result = mysql_query($query) or die("Erro de conexão ao banco de dados: " . mysql_error() . $query);
+		$registro = mysql_fetch_array($result, MYSQL_ASSOC);
+        $titulo = $registro["titulo"];
+		require("../desconectar_mysql.php");
 	}
 	?>
 	<html>
@@ -45,13 +51,13 @@ function constroi_passo0(){
 				<form action="wizard_novo_texto_secao.php" method="post" name="novotexto">
 				<tr>
 					<td class="label">Título:</td>
-					<td><input type="text" name="titulo" maxlength="255" size="40"<? if($update) echo(' value="' . $text["titulo"] . '"');?>></td>
+					<td><input type="text" name="titulo" maxlength="255" size="40"<? if($update) echo(' value="' . $titulo . '"');?>></td>
 				</tr>
 				<tr>
 					<td colspan="2" class="label">
 					<? 
 						require("../editor_secao.php");
-						$editor = new editorHTML("500px", "400px", "/vonmuller/estilo_editor.css", $codigo, 0);
+						$editor = new editorHTML("500px", "400px", "/estilo_editor.css", $codigo, 0);
 					?>
 					</td>
 				</tr>
@@ -62,15 +68,11 @@ function constroi_passo0(){
 				<input type="hidden" name="texto" id="texto">
 				<input type="hidden" name="passo" value="1">
 				<input type="hidden" name="modo" value="<? if($update) echo("update"); else echo("add");?>">
-				<input type="hidden" name="cd" value="<? if($update) echo($text["cd"]);?>">
+				<input type="hidden" name="cd" value="<? if($update) echo($codigo);?>">
 				<input type="hidden" name="secao" value="<?=$secao?>">
 				</form>
 			</table>
 		</body>
-		<script language="javascript" type="text/javascript">
-			var txt = '<?=addslashes(str_replace(chr(13), "", str_replace(chr(10), "", $text["texto"])))?>';
-			document.forms[0].texto.value = txt;
-		</script>
 	</html>
 	<? 
 }

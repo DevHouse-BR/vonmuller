@@ -1,0 +1,45 @@
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+	<trackList>
+
+		<track>
+			<title>Phil_Collins_-_Another_Day_In_Paradise.mp3</title>
+			<creator>Phil_Collins_-_Another_Day_In_Paradise.mp3</creator>
+			<location>Phil_Collins_-_Another_Day_In_Paradise.mp3</location>
+		</track>
+		<track>
+			<title>Bob_Sinclair_-_Love_Generation.mp3</title>
+			<creator>Bob_Sinclair_-_Love_Generation.mp3</creator>
+			<location>Bob_Sinclair_-_Love_Generation.mp3</location>
+		</track>
+		<track>
+			<title>Village_People_-_YMCA.mp3</title>
+			<creator>Village_People_-_YMCA.mp3</creator>
+			<location>Village_People_-_YMCA.mp3</location>
+		</track>
+		<track>
+			<title>Jimmy_Cliff_-_I_Can_See_Clearly_Now.mp3</title>
+			<creator>Jimmy_Cliff_-_I_Can_See_Clearly_Now.mp3</creator>
+			<location>Jimmy_Cliff_-_I_Can_See_Clearly_Now.mp3</location>
+		</track>
+		<track>
+			<title>Gnarls Barkley_-_Crazy.mp3</title>
+			<creator>Gnarls Barkley_-_Crazy.mp3</creator>
+			<location>Gnarls Barkley_-_Crazy.mp3</location>
+		</track>
+		<track>
+			<title>James_Blunt_-_You_Are_Beautifull.mp3</title>
+			<creator>James_Blunt_-_You_Are_Beautifull.mp3</creator>
+			<location>James_Blunt_-_You_Are_Beautifull.mp3</location>
+		</track>
+		<track>
+			<title>Maroon_5_-_This_Love.mp3</title>
+			<creator>Maroon_5_-_This_Love.mp3</creator>
+			<location>Maroon_5_-_This_Love.mp3</location>
+		</track>
+		<track>
+			<title>Phil_Collins_-_In_the_Air_Tonight.mp3</title>
+			<creator>Phil_Collins_-_In_the_Air_Tonight.mp3</creator>
+			<location>Phil_Collins_-_In_the_Air_Tonight.mp3</location>
+		</track>
+	</trackList>
+</playlist>

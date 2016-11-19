@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.0.1
+-- version 3.2.0
 -- http://www.phpmyadmin.net
 --
--- Servidor: localhost
--- Tempo de Geração: Nov 19, 2016 as 09:29 PM
--- Versão do Servidor: 5.0.51
--- Versão do PHP: 5.2.5
+-- Host: localhost
+-- Generation Time: Jun 24, 2009 at 01:56 PM
+-- Server version: 5.0.77
+-- PHP Version: 5.2.6
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
@@ -16,13 +16,13 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Banco de Dados: `vonmuller`
+-- Database: `vonmulle_von`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `config`
+-- Table structure for table `config`
 --
 
 CREATE TABLE IF NOT EXISTS `config` (
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `config` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Extraindo dados da tabela `config`
+-- Dumping data for table `config`
 --
 
 INSERT INTO `config` (`cd`, `chave`, `valor`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `config` (`cd`, `chave`, `valor`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `eventos`
+-- Table structure for table `eventos`
 --
 
 CREATE TABLE IF NOT EXISTS `eventos` (
@@ -65,29 +65,30 @@ CREATE TABLE IF NOT EXISTS `eventos` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=210 ;
 
 --
--- Extraindo dados da tabela `eventos`
+-- Dumping data for table `eventos`
 --
 
 INSERT INTO `eventos` (`cd`, `nomes`, `data`, `local`, `descricao`, `imagem_destaque`, `email`, `senha`, `tipo`, `status`, `listadecasamento`, `pginicial`) VALUES
-(204, 'Fernanda e Silvestre', 1492484400, 'Bkr Eventos.', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 12987, '', '', 1, 1, '', ''),
-(205, 'Ana Paula  e Helio', 1498359600, 'Bkr eventos.', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 13093, '', '', 1, 1, '', ''),
+(204, 'Fernanda e Silvestre', 1240023600, 'Bkr Eventos.', '', 12987, '', '', 1, 0, '', ''),
+(205, 'Ana Paula  e Helio', 1240628400, 'Bkr eventos.', '', 13093, '', '', 1, 0, '', ''),
 (195, 'Alexsandro Moreira Hoff e Renata Borges', 1233972000, 'S.E.R  Tigre/Resturante Adamo.', 'Fotógrafo:Wander von Muller.\r\nSuporte de iluminação:Vanessa Sens.\r\nLuana von muller.\r\nSuporte Telão:Silvana Schioqueta Von Muller.  \r\nDecoração/ Iluminação: São judas decorações.\r\nSom: Watsom/Sandro e equipe.\r\nCerimonial: Equipe Andréia Assis.\r\n\r\n\r\n', 11809, '', '', 1, 0, '', ''),
-(203, 'Elaine e Rodrigo.', 1492484400, '', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 12861, '', '', 1, 1, '', ''),
-(197, 'Debora e Adenildo.', 1234576800, '', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 12083, '', '', 1, 0, '', ''),
-(193, 'Regina e Marcio.', 1232157600, '', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 11689, '', '', 1, 0, '', ''),
-(187, 'Lais.', 1232762400, '', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 11330, '', '', 3, 0, '', ''),
-(190, 'Marilise e Ricardo.', 1232762400, '', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 11391, '', '', 1, 0, '', ''),
-(202, 'Andrea e Paulo', 1237604400, 'S. Francisco.', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 12816, '', '', 1, 0, '', ''),
-(191, 'Thais e Fhellipe.', 1232157600, '', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 11513, '', '', 1, 0, '', ''),
-(200, 'Vanessa e Fábio', 1481421600, 'Bkr eventos', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 12615, '', '', 1, 1, '', ''),
-(201, 'Geslaine e Diego', 1237604400, 'Bkr eventos.', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 12734, '', '', 1, 0, '', ''),
-(198, 'Rosiani e Fabiano', 1235185200, 'Restaurante do nego', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 12233, '', '', 1, 0, '', ''),
-(199, 'Carla e Diogo', 1238814000, '', 'Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.', 12614, '', '', 1, 0, '', '');
+(203, 'Elaine e Rodrigo.', 1240023600, '', '', 12861, '', '', 1, 0, '', ''),
+(197, 'Debora e Adenildo.', 1234576800, '', '', 12083, '', '', 1, 0, '', ''),
+(193, 'Regina e Marcio.', 1232157600, '', '', 11689, '', '', 1, 0, '', ''),
+(187, 'Lais.', 1232762400, '', '', 11330, '', '', 3, 0, '', ''),
+(190, 'Marilise e Ricardo.', 1232762400, '', '', 11391, '', '', 1, 0, '', ''),
+(202, 'Andrea e Paulo', 1237604400, 'S. Francisco.', '', 12816, '', '', 1, 0, '', ''),
+(191, 'Thais e Fhellipe.', 1232157600, '', '', 11513, '', '', 1, 0, '', ''),
+(200, 'Vanessa e Fábio', 1239418800, 'Bkr eventos', '', 12615, '', '', 1, 0, '', ''),
+(201, 'Geslaine e Diego', 1237604400, 'Bkr eventos.', '', 12734, '', '', 1, 0, '', ''),
+(198, 'Rosiani e Fabiano', 1235185200, 'Restaurante do nego', '', 12233, '', '', 1, 0, '', ''),
+(199, 'Carla e Diogo', 1238814000, '', '', 12614, '', '', 1, 0, '', ''),
+(209, 'teste', 1245639600, 'fdasf', 'fdasfsa', 13575, '', '', 22, 0, '', '');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `fotos`
+-- Table structure for table `fotos`
 --
 
 CREATE TABLE IF NOT EXISTS `fotos` (
@@ -102,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `fotos` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13576 ;
 
 --
--- Extraindo dados da tabela `fotos`
+-- Dumping data for table `fotos`
 --
 
 INSERT INTO `fotos` (`cd`, `path`, `path_thumb`, `cd_evento`, `bytes`, `largura`, `altura`) VALUES
@@ -1561,6 +1562,7 @@ INSERT INTO `fotos` (`cd`, `path`, `path_thumb`, `cd_evento`, `bytes`, `largura`
 (11452, 'fotos/190_270428640.jpg', 'fotos/thumb/thumb_190_270428640.jpg', 190, 0, 213, 320),
 (11453, 'fotos/190_270428641.jpg', 'fotos/thumb/thumb_190_270428641.jpg', 190, 0, 480, 320),
 (11454, 'fotos/190_270428642.jpg', 'fotos/thumb/thumb_190_270428642.jpg', 190, 0, 480, 320),
+(13575, 'fotos/209_1_b.jpg', 'fotos/thumb/thumb_209_1_b.jpg', 209, 12586, 258, 116),
 (13202, 'fotos/205_1994064380.jpg', 'fotos/thumb/thumb_205_1994064380.jpg', 205, 0, 500, 333),
 (13201, 'fotos/205_1994064379.jpg', 'fotos/thumb/thumb_205_1994064379.jpg', 205, 0, 500, 333),
 (13200, 'fotos/205_1994064378.jpg', 'fotos/thumb/thumb_205_1994064378.jpg', 205, 0, 500, 333),
@@ -1751,9 +1753,9 @@ INSERT INTO `fotos` (`cd`, `path`, `path_thumb`, `cd_evento`, `bytes`, `largura`
 (11980, 'fotos/195_301803457.jpg', 'fotos/thumb/thumb_195_301803457.jpg', 195, 0, 213, 320),
 (11979, 'fotos/195_301803456.jpg', 'fotos/thumb/thumb_195_301803456.jpg', 195, 0, 213, 320),
 (11978, 'fotos/195_301803455.jpg', 'fotos/thumb/thumb_195_301803455.jpg', 195, 0, 213, 320),
-(11977, 'fotos/195_301803454.jpg', 'fotos/thumb/thumb_195_301803454.jpg', 195, 0, 213, 320),
-(11976, 'fotos/195_301803453.jpg', 'fotos/thumb/thumb_195_301803453.jpg', 195, 0, 213, 320);
+(11977, 'fotos/195_301803454.jpg', 'fotos/thumb/thumb_195_301803454.jpg', 195, 0, 213, 320);
 INSERT INTO `fotos` (`cd`, `path`, `path_thumb`, `cd_evento`, `bytes`, `largura`, `altura`) VALUES
+(11976, 'fotos/195_301803453.jpg', 'fotos/thumb/thumb_195_301803453.jpg', 195, 0, 213, 320),
 (11975, 'fotos/195_301803452.jpg', 'fotos/thumb/thumb_195_301803452.jpg', 195, 0, 213, 320),
 (11974, 'fotos/195_301803451.jpg', 'fotos/thumb/thumb_195_301803451.jpg', 195, 0, 480, 320),
 (11973, 'fotos/195_301803450.jpg', 'fotos/thumb/thumb_195_301803450.jpg', 195, 0, 480, 320),
@@ -1857,7 +1859,7 @@ INSERT INTO `fotos` (`cd`, `path`, `path_thumb`, `cd_evento`, `bytes`, `largura`
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `nomedesecao`
+-- Table structure for table `nomedesecao`
 --
 
 CREATE TABLE IF NOT EXISTS `nomedesecao` (
@@ -1868,7 +1870,7 @@ CREATE TABLE IF NOT EXISTS `nomedesecao` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
--- Extraindo dados da tabela `nomedesecao`
+-- Dumping data for table `nomedesecao`
 --
 
 INSERT INTO `nomedesecao` (`cd`, `nome`, `pgseparadas`) VALUES
@@ -1882,7 +1884,7 @@ INSERT INTO `nomedesecao` (`cd`, `nome`, `pgseparadas`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `secoes`
+-- Table structure for table `secoes`
 --
 
 CREATE TABLE IF NOT EXISTS `secoes` (
@@ -1894,7 +1896,7 @@ CREATE TABLE IF NOT EXISTS `secoes` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
--- Extraindo dados da tabela `secoes`
+-- Dumping data for table `secoes`
 --
 
 INSERT INTO `secoes` (`cd`, `titulo`, `texto`, `nomedesecao`) VALUES
@@ -1917,7 +1919,7 @@ INSERT INTO `secoes` (`cd`, `titulo`, `texto`, `nomedesecao`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `textos`
+-- Table structure for table `textos`
 --
 
 CREATE TABLE IF NOT EXISTS `textos` (
@@ -1928,7 +1930,7 @@ CREATE TABLE IF NOT EXISTS `textos` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Extraindo dados da tabela `textos`
+-- Dumping data for table `textos`
 --
 
 INSERT INTO `textos` (`cd`, `nome`, `conteudo`) VALUES
@@ -1937,7 +1939,7 @@ INSERT INTO `textos` (`cd`, `nome`, `conteudo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tipodeevento`
+-- Table structure for table `tipodeevento`
 --
 
 CREATE TABLE IF NOT EXISTS `tipodeevento` (
@@ -1948,7 +1950,7 @@ CREATE TABLE IF NOT EXISTS `tipodeevento` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
 
 --
--- Extraindo dados da tabela `tipodeevento`
+-- Dumping data for table `tipodeevento`
 --
 
 INSERT INTO `tipodeevento` (`cd`, `tipo`) VALUES
@@ -1980,7 +1982,3 @@ INSERT INTO `tipodeevento` (`cd`, `tipo`) VALUES
 (26, 'tipo teste'),
 (27, 'floresta'),
 (28, '123');
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

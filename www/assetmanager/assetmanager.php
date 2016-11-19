@@ -453,6 +453,8 @@ function deleteFolder()
 function selectFile(index)
 	{
 	sFile_RelativePath = document.getElementById("inpFile"+index).value;
+	sFile_RelativePath = sFile_RelativePath.replace("C:\\Domains\\vonmuller.com\\wwwroot\\", "/");
+	sFile_RelativePath = sFile_RelativePath.replace("C:\\\\Domains\\\\vonmuller.com\\\\wwwroot\\\\", "/");
 
 	//This will make an Absolute Path
 	if(bReturnAbsolute)

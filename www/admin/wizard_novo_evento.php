@@ -161,6 +161,7 @@ function constroi_passo1(){
 	$email = $_POST["email"];
 	$status = $_POST["status"];
 	$pginicial = $_POST["pginicial"];
+	$listadecasamento = $_POST["listadecasamento"];
 	
 	if ($restrito == "sim"){
 		$senha = str_replace("=", "", base64_encode(rand(100000, 999999)));
@@ -174,7 +175,7 @@ function constroi_passo1(){
 	$data = mktime( 0, 0, 0, $tmp[1], $tmp[0], $tmp[2]);
 	
 	if ($modo == "add")	{
-		$query = "INSERT INTO eventos (nomes, data, local, descricao, email, senha, tipo, status, pginicial) VALUES ('";
+		$query = "INSERT INTO eventos (nomes, data, local, descricao, email, senha, tipo, status, pginicial, listadecasamento) VALUES ('";
 		$query .= $nomes ."','";
 		$query .= $data ."','";
 		$query .= $local ."','";
@@ -183,7 +184,8 @@ function constroi_passo1(){
 		$query .= $senha . "', ";
 		$query .= $tipo . ", ";
 		$query .= $status . ", '";
-		$query .= $pginicial . "')";
+		$query .= $pginicial . "', '";
+		$query .= $listadecasamento . "')";
 	}
 	if (($modo == "update") && (strlen($email) != 0)){
 		$consulta = "SELECT email FROM eventos WHERE cd=" . $cd;
@@ -202,6 +204,7 @@ function constroi_passo1(){
 		$query .= "email='" . $email ."', ";
 		$query .= "senha='" . $senha ."', ";
 		$query .= "status='" . $status ."', ";
+		$query .= "listadecasamento='" . $listadecasamento ."', ";
 		$query .= "pginicial='" . $pginicial ."' ";
 		$query .= " WHERE cd=" . $cd;
 	}
@@ -279,7 +282,7 @@ function constroi_passo2(){
 	if($_POST["watermark"] == "on") $watermark = true;
 	else $watermark = false;
 	
-	$info_imagem = upload_imagem($pasta, $arquivo, $nome_arquivo, 640, 480, 120, 90, true, $watermark);
+	$info_imagem = upload_imagem($pasta, $arquivo, $nome_arquivo, 500, 333, 120, 90, true, $watermark);
 	
 	$query = "INSERT INTO fotos (path, path_thumb, cd_evento, bytes, largura, altura) VALUES ('";
 	$query .= $info_imagem[0] ."','";
