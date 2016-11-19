@@ -1,0 +1,381 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>VonMuller</title>
+		<link href="estilo.css" type="text/css" rel="stylesheet" rev="stylesheet" />
+		<script language="javascript">
+			var saiu = 0;
+			var intervalo;
+			var count = 0;
+			var intervalofade;
+	
+			function start(){
+				count = 0;
+				saiu = 0;
+				intervalo = setInterval(checamouse, 500);
+			}
+			function checamouse(){
+				if (saiu != 0){
+					escondemenu();
+					clearInterval(intervalo);
+					saiu = 0;
+					count = 0;
+				}
+			}
+			function escondemenu(){
+							document.getElementById("menu_6").innerHTML = "";
+				document.getElementById("menu_6").style.visibility = "hidden";
+								document.getElementById("menu_7").innerHTML = "";
+				document.getElementById("menu_7").style.visibility = "hidden";
+								document.getElementById("menu_8").innerHTML = "";
+				document.getElementById("menu_8").style.visibility = "hidden";
+								document.getElementById("menu_9").innerHTML = "";
+				document.getElementById("menu_9").style.visibility = "hidden";
+								document.getElementById("menu_10").innerHTML = "";
+				document.getElementById("menu_10").style.visibility = "hidden";
+								document.getElementById("menu_11").innerHTML = "";
+				document.getElementById("menu_11").style.visibility = "hidden";
+							}
+					function mostramenu6(){
+				escondemenu();
+				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">';
+
+				document.getElementById("menu_6").style.position = "absolute";
+				document.getElementById("menu_6").style.zIndex = "99999";
+				document.getElementById("menu_6").style.visibility = "visible";
+				document.getElementById("menu_6").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
+			}
+						function mostramenu7(){
+				escondemenu();
+				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=6.html#7">Veja Alguns Videos</a></li></td></tr>';
+document.getElementById("menu_7").innerHTML = html;
+				document.getElementById("menu_7").style.position = "absolute";
+				document.getElementById("menu_7").style.zIndex = "99999";
+				document.getElementById("menu_7").style.visibility = "visible";
+				document.getElementById("menu_7").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
+			}
+						function mostramenu8(){
+				escondemenu();
+				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=4.html#3">Veja Alguns Exemplos</a></li></td></tr>';
+document.getElementById("menu_8").innerHTML = html;
+				document.getElementById("menu_8").style.position = "absolute";
+				document.getElementById("menu_8").style.zIndex = "99999";
+				document.getElementById("menu_8").style.visibility = "visible";
+				document.getElementById("menu_8").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
+			}
+						function mostramenu9(){
+				escondemenu();
+				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=5&amp;subsecao=6.html">Nossos Produtos E Serviços!</a></li></td></tr>';
+document.getElementById("menu_9").innerHTML = html;
+				document.getElementById("menu_9").style.position = "absolute";
+				document.getElementById("menu_9").style.zIndex = "99999";
+				document.getElementById("menu_9").style.visibility = "visible";
+				document.getElementById("menu_9").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
+			}
+						function mostramenu10(){
+				escondemenu();
+				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=1&amp;subsecao=2.html">Albuns</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=1&amp;subsecao=4.html">Convites</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=1&amp;subsecao=5.html">Filmagens Em Dvd</a></li></td></tr>';
+document.getElementById("menu_10").innerHTML = html;
+				document.getElementById("menu_10").style.position = "absolute";
+				document.getElementById("menu_10").style.zIndex = "99999";
+				document.getElementById("menu_10").style.visibility = "visible";
+				document.getElementById("menu_10").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
+			}
+						function mostramenu11(){
+				escondemenu();
+				var html = 	'<table border="0" width="190" bgcolor="#E4D4BA">'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=14.html">Books</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=12.html">Contato</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=16.html">Equipe</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=15.html">Filmagem</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=8.html">Início</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=13.html">Orçamento</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=10.html">Portfólio</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=9.html">Produtos</a></li></td></tr>'+ '<tr><td width="5">&nbsp;</td><td><li><a class="menuesquerdo" href="secao.php@secao=8&amp;subsecao=11.html">Serviços</a></li></td></tr>';
+document.getElementById("menu_11").innerHTML = html;
+				document.getElementById("menu_11").style.position = "absolute";
+				document.getElementById("menu_11").style.zIndex = "99999";
+				document.getElementById("menu_11").style.visibility = "visible";
+				document.getElementById("menu_11").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
+			}
+					</script>
+	</head>
+	<body>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td width="43" height="60" background="imagens/filme1.jpg">&nbsp;</td>
+			</tr>
+			<tr>
+				<td height="100%" align="center" valign="top">
+					<table>
+						<tr>
+							<td width="147" valign="top"><img align="absmiddle" src="imagens/logo.jpg" />
+								<table width="147" cellpadding="0" cellspacing="0">
+									<tr>
+										<td width="147" height="31" background="imagens/cabecalho_menu.jpg">&nbsp;</td>
+									</tr>
+									<tr>
+										<td background="imagens/fundo_menu.jpg" align="left" style="padding-left:25px;">
+											<a class="menuesquerdo" href="index.html">Home</a><br />
+											<a class="menuesquerdo" href="agenda.php.html">Agenda</a><br />
+											<a class="menuesquerdo" href="eventos.php.html">Eventos</a><br />
+																								
+																						</td>
+									</tr>
+									<tr>
+										<td width="147" height="34" background="imagens/rodape_menu.jpg">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+							<td width="770">
+								<table width="100%" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td colspan="3" height="80" style="font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; font-size:20px; font-weight:bold;">Wander Von Muller - Fotógrafo Profissional</td>
+									</tr>
+									<tr>
+										<td colspan="3"><img src="imagens/cabecalho.jpg" /></td>
+									</tr>
+									<tr>
+										<td width="72" background="imagens/esq.jpg">&nbsp;</td>
+										<td width="600" background="imagens/fundo.jpg">
+		<div>Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.</div>
+		<table width="100%">
+		<tr>
+			<td width="100%" valign="top" align="center">
+					<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="index.html">[HOME]</a>&nbsp;-&nbsp;<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="eventos.php.html">[EVENTOS]</a>&nbsp;-&nbsp;<a class="menurodape" style="font-weight: normal; font-size: 11px;">[Casamento&nbsp;de&nbsp;Rosiani e Fabiano]</a>
+	<hr>
+	<div>Fotógrafo:Wander von Muller. Suporte de iluminação:Vanessa Sens. Luana von muller. Suporte Telão:Silvana Schioqueta Von Muller.   Decoração/ Iluminação: São judas decorações. Som: Watsom/Sandro e equipe. Cerimonial: Equipe Andréia Assis.</div>
+		<div class="titulosecao"><img align="bottom" src="imagens/bullet_silver.gif">&nbsp;Clique na foto para ampliar</div><br>
+	<table width="100%" cellspacing="5" cellpadding="0" border="0"><tr>
+			<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434283.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434283.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434284.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434284.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434285.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434285.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434286.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434286.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434287.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434287.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434288.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434288.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434289.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434289.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434290.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434290.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434291.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434291.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434292.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434292.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434293.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434293.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434294.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434294.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434295.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434295.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434296.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434296.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434297.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434297.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434298.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434298.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434299.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434299.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434300.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434300.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434301.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434301.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434302.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434302.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434303.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434303.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434304.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434304.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434305.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434305.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434306.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434306.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434307.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434307.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434308.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434308.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434309.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434309.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434310.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434310.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434311.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434311.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434312.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434312.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434313.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434313.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434314.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434314.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434315.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434315.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434316.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434316.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434317.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434317.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434318.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434318.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434319.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434319.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434320.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434320.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434321.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434321.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434322.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434322.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434323.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434323.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434324.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434324.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434325.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434325.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434326.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434326.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434327.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434327.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434328.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434328.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434329.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434329.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434330.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434330.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434331.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434331.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434332.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434332.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434333.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434333.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434334.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434334.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434335.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434335.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434336.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434336.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434337.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434337.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434338.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434338.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434339.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434339.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434340.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434340.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434341.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434341.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434342.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434342.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434343.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="fotos/thumb/thumb_198_1846434343.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434344.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434344.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434345.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434345.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434346.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434346.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434347.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434347.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434348.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434348.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434349.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434349.jpg"><br>
+					</td>
+		</tr><tr>		<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434350.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434350.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434351.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434351.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434352.jpg', 'Fotografia', 'width=500,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434352.jpg"><br>
+					</td>
+				<td align="center" valign="top" class="label" style="text-align: center;">
+			<img style="cursor:pointer;" onClick="javascript: void window.open('fotos/198_1846434353.jpg', 'Fotografia', 'width=222,height=333,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes');" src="http://localhost/fotos/thumb/thumb_198_1846434353.jpg"><br>
+					</td>
+		</tr><tr></tr></table>
+				</td>
+		</tr>
+	</table>
+									</td>
+										<td width="98" background="imagens/dir.jpg">&nbsp;</td>
+									</tr>
+									<tr>
+										<td colspan="3"><img src="imagens/rodape.jpg" /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>					
+				</td>
+			</tr>
+			<tr>
+				<td width="43" height="60" background="imagens/filme2.jpg">&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>
+	
