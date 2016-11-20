@@ -4,187 +4,21 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title>VonMuller</title>
 		<link href="estilo.css" type="text/css" rel="stylesheet" rev="stylesheet" />
-		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
-		<script type="text/javascript">
-			_uacct = "UA-2242386-3";
-			urchinTracker();
-		</script>
-		<script language="javascript">
-			var saiu = 0;
-			var intervalo;
-			var count = 0;
-			var intervalofade;
-
-			function start(){
-				count = 0;
-				saiu = 0;
-				intervalo = setInterval(checamouse, 500);
-			}
-			function checamouse(){
-				if (saiu != 0){
-					escondemenu();
-					clearInterval(intervalo);
-					saiu = 0;
-					count = 0;
-				}
-			}
-			function escondemenu(){
-							document.getElementById("menu_6").innerHTML = "";
-				document.getElementById("menu_6").style.visibility = "hidden";
-								document.getElementById("menu_7").innerHTML = "";
-				document.getElementById("menu_7").style.visibility = "hidden";
-								document.getElementById("menu_8").innerHTML = "";
-				document.getElementById("menu_8").style.visibility = "hidden";
-								document.getElementById("menu_9").innerHTML = "";
-				document.getElementById("menu_9").style.visibility = "hidden";
-								document.getElementById("menu_10").innerHTML = "";
-				document.getElementById("menu_10").style.visibility = "hidden";
-							}
-					function mostramenu6(){
-				escondemenu();
-				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+'</table>';
-
-				document.getElementById("menu_6").style.position = "absolute";
-				document.getElementById("menu_6").style.zIndex = "99999";
-				document.getElementById("menu_6").style.visibility = "visible";
-				document.getElementById("menu_6").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
-			}
-						function mostramenu7(){
-				escondemenu();
-				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=6#7">Veja Alguns Videos</a></li></td></tr>'+'</table>';
-document.getElementById("menu_7").innerHTML = html;
-				document.getElementById("menu_7").style.position = "absolute";
-				document.getElementById("menu_7").style.zIndex = "99999";
-				document.getElementById("menu_7").style.visibility = "visible";
-				document.getElementById("menu_7").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
-			}
-						function mostramenu8(){
-				escondemenu();
-				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=4#3">Veja Alguns Exemplos</a></li></td></tr>'+'</table>';
-document.getElementById("menu_8").innerHTML = html;
-				document.getElementById("menu_8").style.position = "absolute";
-				document.getElementById("menu_8").style.zIndex = "99999";
-				document.getElementById("menu_8").style.visibility = "visible";
-				document.getElementById("menu_8").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
-			}
-						function mostramenu9(){
-				escondemenu();
-				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=5&amp;subsecao=6">Nossos Produtos E Serviços!</a></li></td></tr>'+'</table>';
-document.getElementById("menu_9").innerHTML = html;
-				document.getElementById("menu_9").style.position = "absolute";
-				document.getElementById("menu_9").style.zIndex = "99999";
-				document.getElementById("menu_9").style.visibility = "visible";
-				document.getElementById("menu_9").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
-			}
-						function mostramenu10(){
-				escondemenu();
-				var html = 	'<table border="0" width="200" bgcolor="#BBBBBB">'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=1&amp;subsecao=2">Albuns</a></li></td></tr>'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=1&amp;subsecao=4">Convites</a></li></td></tr>'+ '<tr><td>&nbsp;</td><td align="left"><li><a class="menuesquerdo" href="http://localhost/secao.php?secao=1&amp;subsecao=5">Filmagens Em Dvd</a></li></td></tr>'+'</table>';
-document.getElementById("menu_10").innerHTML = html;
-				document.getElementById("menu_10").style.position = "absolute";
-				document.getElementById("menu_10").style.zIndex = "99999";
-				document.getElementById("menu_10").style.visibility = "visible";
-				document.getElementById("menu_10").style.filter = "progid:DXImageTransform.Microsoft.Shadow(color=#333333, Direction=135, Strength=5), filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=88)";
-			}
-					</script>
 	</head>
 	<body>
-		<table width="100%" cellpadding="0" cellspacing="0" border="0">
-			<tr>
-				<td height="60" background="imagens/filme1.jpg">&nbsp;</td>
-			</tr>
-			<tr>
-				<td height="150" align="center">
-					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="920" height="150" id="cabecalho" align="middle">
-						<param name="allowScriptAccess" value="sameDomain" />
-						<param name="movie" value="imagens/cabecalho.swf" />
-						<param name="quality" value="high" />
-						<param name="bgcolor" value="#000000" />
-						<embed src="imagens/cabecalho.swf" quality="high" bgcolor="#000000" width="920" height="150" name="cabecalho" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-					</object>
-				</td>
-			</tr>
-			<tr>
-				<td height="100%" align="center" valign="top">
-					<table>
-						<tr>
-							<td width="147" valign="top">
-								<table width="147" cellpadding="0" cellspacing="0" style="background-image:url(imagens/fundo_conteudo.jpg); background-repeat:repeat-x; background-color:#FFFFFF; background-position:bottom; border-left:#999999 5px solid; border-right:#999999 5px solid;">
-									<tr>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td>&nbsp;</td>
-									</tr>
-									<tr>
-										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
-											<a class="menuesquerdo" href="home.php.html" onmouseover="escondemenu();">Home</a>
-										</td>
-									</tr>
-									<tr>
-										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
-											<a class="menuesquerdo" href="agenda.php.html" onmouseover="escondemenu();">Agenda</a>
-										</td>
-									</tr>
-									<tr>
-										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
-											<a class="menuesquerdo" href="eventos.php.html" onmouseover="escondemenu();">Eventos</a><br />
-										</td>
-									</tr>
-																				<tr>
-												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
-													<a class="menuesquerdo" onMouseOver="mostramenu6();" href="secao.php@secao=7.html">book</a><span id="menu_6" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
-												</td>
-											</tr>
-																					<tr>
-												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
-													<a class="menuesquerdo" onMouseOver="mostramenu7();" href="secao.php@secao=6.html">Making Of</a><span id="menu_7" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
-												</td>
-											</tr>
-																					<tr>
-												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
-													<a class="menuesquerdo" onMouseOver="mostramenu8();" href="secao.php@secao=4.html">Montagens</a><span id="menu_8" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
-												</td>
-											</tr>
-																					<tr>
-												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
-													<a class="menuesquerdo" onMouseOver="mostramenu9();" href="secao.php@secao=5.html">Portfólio</a><span id="menu_9" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
-												</td>
-											</tr>
-																					<tr>
-												<td height="20" align="center" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)';">
-													<a class="menuesquerdo" onMouseOver="mostramenu10();" href="secao.php@secao=1.html">Produtos</a><span id="menu_10" onMouseOver="start();" onMouseOut="saiu = 1;"></span>
-												</td>
-											</tr>
-																			<tr>
-										<td height="20" align="center" onmouseover="this.style.backgroundColor='#AAAAAA'; this.style.filter = 'progid:DXImageTransform.Microsoft.Shadow(color=#666666, Direction=135, Strength=4)'; this.style.position = 'relative';" onmouseout="this.style.backgroundColor=''; this.style.filter = ''; this.style.position = '';">
-											<a class="menuesquerdo" href="contato.php.html" onmouseover="escondemenu();">Contato</a>
-										</td>
-									</tr>
-									<tr>
-										<td height="20" align="center">
-											<br /><br /><br />
-										</td>
-									</tr>
-								</table>
-								<img src="imagens/fundo_menu.gif" />
-							</td>
-							<td width="770">
-								<table width="100%" cellpadding="20" cellspacing="0" border="0">
-									<tr>
-										<td style="background-image:url(imagens/fundo_conteudo.jpg); background-repeat:repeat-x; background-color:#FFFFFF; background-position:bottom; border-left:#999999 5px solid; border-right:#999999 5px solid;"><br /><br />
 		<table width="100%">
 		<tr>
 			<td width="100%" valign="top" align="center">
 					<script language="javascript">
 		var w;
 	</script>
-	<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="http://localhost/home.php">[HOME]</a>&nbsp;-&nbsp;<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="eventos.php.html">[EVENTOS]</a>&nbsp;-&nbsp;<a class="menurodape" style="font-weight: normal; font-size: 11px;">[Casamento&nbsp;de&nbsp;Regina e Marcio.]</a>
+	<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="eventos.php.html">[EVENTOS]</a>&nbsp;-&nbsp;<a class="menurodape" style="font-weight: normal; font-size: 11px;">[Casamento&nbsp;de&nbsp;Regina e Marcio.]</a>
 	<hr>
 	<div align="left"></div>
 	<div align="left">
 			</div><br /><br />
 		<div class="titulosecao"><img align="bottom" src="imagens/bullet_silver.gif">&nbsp;Clique na foto para ampliar</div><br>
-	<div class="titulosecao"><img align="bottom" src="imagens/bullet_silver.gif">&nbsp;<a href="ver_evento.php@cd=193.html#" onclick="window.open('slideshow.php?cd=193', null, 'height=333,width=500,status=no,toolbar=no');">Ver Fotos Em Slides</a></div><br>
+	<div class="titulosecao"><img align="bottom" src="imagens/bullet_silver.gif">&nbsp;<a href="ver_evento.php@cd=199.html#" onclick="window.open('slideshow.php@cd=199.html', null, 'height=333,width=500,status=no,toolbar=no');">Ver Fotos Em Slides</a></div><br>
 	
 	<table width="100%" cellspacing="5" cellpadding="0" border="0"><tr>
 			<td align="center" valign="top" class="label" style="text-align: center;">
@@ -431,18 +265,6 @@ document.getElementById("menu_10").innerHTML = html;
 				</td>
 		</tr>
 	</table>
-			<br /><br /><br /><br /><center><b>&ordm;&nbsp;Von Muller Fotografia e Filmagem&nbsp;&ordm;</b><br />Rua Santo Agostinho, 96 - Sala 01 - Guanabara - Joinville - SC<br /><a href="mailto: faleconcosco@vonmuller.com">faleconosco@vonmuller.com</a><br />(47) 3465.2943/9126.0414</center>
-										</td>
-								</table><img src="imagens/fundo_conteudo2.gif" />
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<td width="43" height="60" background="imagens/filme2.jpg">&nbsp;</td>
-			</tr>
-		</table>
-	</body>
+		</body>
 </html>
 	
