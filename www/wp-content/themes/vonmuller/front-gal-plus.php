@@ -28,7 +28,8 @@ remove_filter( 'posts_where' , 'dt_posts_parents_where' );
 // process images
 foreach( $slides->posts as $slide ) {
 	$image = wp_get_attachment_image_src($slide->ID, 'large');
-	$small_image = esc_attr(get_template_directory_uri()."/thumb.php?src={$image[0]}&w=102&h=62zc=1");
+	//$small_image = esc_attr(get_template_directory_uri()."/thumb.php?src={$image[0]}&w=102&h=62zc=1");
+  $small_image = esc_attr("{$image[0]}");
 	
 	$images[] = array(
         "orig_image"		=> $image,
