@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Piecemaker>
+  <Settings>
+    <imageWidth>820</imageWidth>
+    <imageHeight>280</imageHeight>
+    <segments>7</segments>
+    <tweenTime>1.2</tweenTime>
+    <tweenDelay>0.1</tweenDelay>
+    <tweenType>easeInOutBack</tweenType>
+    <zDistance>0</zDistance>
+    <expand>20</expand>
+    <innerColor>0x111111</innerColor>
+    <textBackground>0x0064C8</textBackground>
+    <shadowDarkness>100</shadowDarkness>
+    <textDistance>25</textDistance>
+    <autoplay>12</autoplay>
+  </Settings>
+  <Image Filename="../images/slides/s_11.jpg"/>
+  <Image Filename="../images/slides/s_07.jpg"/>
+  <Image Filename="../images/slides/s_06.jpg"/>
+  <Image Filename="../images/slides/s_17.jpg"/>
+  <Image Filename="../images/slides/s_16.jpg"/>
+  <Image Filename="../images/slides/s_08.jpg"/>
+  <Image Filename="../images/slides/s_05.jpg"/>
+  <Image Filename="../images/slides/s_09.jpg"/>
+  <Image Filename="../images/slides/s_03.jpg"/>
+  <Image Filename="../images/slides/s_01.jpg"/>
+  <Image Filename="../images/slides/s_12.jpg"/>
+  <Image Filename="../images/slides/s_04.jpg"/>
+  <Image Filename="../images/slides/s_10.jpg"/>
+  <Image Filename="../images/slides/s_02.jpg"/>
+  <Image Filename="../images/slides/s_15.jpg"/>
+  <Image Filename="../images/slides/s_13.jpg"/>
+  <Image Filename="../images/slides/s_14.jpg"/>
+</Piecemaker>

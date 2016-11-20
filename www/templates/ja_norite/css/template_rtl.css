@@ -1,0 +1,1816 @@
+/*
+# ------------------------------------------------------------------------
+# JA Norite template for Joomla 1.5.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+/* COMMON STYLE
+--------------------------------------------------------- */
+html { direction: rtl; }
+
+th { text-align: right; }
+
+.contentpaneopen_edit {
+	float: left !important;
+}
+
+/* Small text ---*/
+.smalldark { text-align: right; }
+
+/* List ---*/
+.column ul li {
+	background-position: 97% 7px;
+	padding-left: 0;
+	padding-right: 32px;
+}
+
+.column ol li {
+	margin-left: 0;
+	margin-right: 30px;
+}
+
+/* Others ---*/
+th { text-align: right; }
+
+/* FORM
+--------------------------------------------------------- */
+.button {
+	margin-left: 0px;
+	margin-right: 5px;
+}
+	
+.inputbox {
+	background-position: top right;
+}
+
+.inputbox:hover, .inputbox:focus { background-position: top left; }
+
+/* Login ---*/
+.login_form label {
+	float: right;
+	text-align: left;
+}
+
+.login_form .inputbox {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.login_form .button {
+	margin-left: 0;
+	margin-right: 140px;
+}
+
+/* Register ---*/
+.form-register label {
+	float: right;
+	text-align: left;
+}
+
+.form-register .inputbox {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.form-register .button {
+	margin-left: 0;
+	margin-right: 140px;
+}
+
+/* User ---*/
+.user-details label {
+	float: right;
+	text-align: left;
+}
+
+.user-details .inputbox {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.user-details .button {
+	margin-left: 0;
+	margin-right: 140px;
+}
+
+.user-details .user_name span {
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+/* Search ---*/
+
+/* Contact ---*/
+#component-contact img {
+	float: left;	
+}
+
+#component-contact table img {
+	float: none;
+}
+
+/* JOOMLA STYLE
+--------------------------------------------------------- */
+/* Layout Deco ---*/
+.cols2 .column1 .contentpaneopen {
+	padding-left: 0;
+	padding-right: 7px;
+}
+
+.cols2 .column2 .contentpaneopen {
+	padding-left: 0;
+	padding-right: 7px;
+}
+
+/* Meta ---*/
+.article-meta {
+	float: right;
+}
+
+.createby, .createdate {
+	background-position: right 2px;
+	padding: 3px 20px 3px 3px;
+	display: inline-block;
+}
+
+.buttonheading { float: left; }
+
+.buttonheading img {
+	float: left;
+	margin: 0 0 0 5px;
+}
+
+/*Inline images ---*/
+.haveimage, .article_column .haveimage {
+	padding-left: 0 !important;
+	padding-right: 240px !important;
+}
+
+
+.article-image {
+	left: auto;
+	right: 0;
+}
+
+/* Tables ---*/
+
+/* Content Toc */
+table.contenttoc {
+	float: left;
+	margin: 0 12px 10px 0;
+}
+
+table.contenttoc td {
+	background-position: 98% 6px;
+	padding: 1px 20px 1px 5px;
+}
+
+/* Poll */
+dl.poll dt, dl.poll dd { float: right; }
+
+dl.poll dt { clear: right; }
+
+dl.poll dd { clear: left; }
+
+table.pollstableborder {
+	text-align: right;
+}
+
+.poll input {
+	float: right;
+}
+
+.poll br {
+	clear: both;
+}
+
+/* Misc. */
+
+/* Pagination ---*/
+ul.pagination li {
+	padding: 0;
+}
+
+.sortby .filter, .sortby .display { float: right; }
+
+.sortby .display { float: left; text-align: left; }
+
+.counter {
+	text-align: left;
+}
+.blog_more ul li {
+	background-position: right 8px;
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+/* Messages ---*/
+
+/* Tooltips --- */
+.tool-tip {
+	float: right;
+}
+
+.tool-title {
+	background-position: right top;
+}
+
+.hasTip img { margin: 0 0 0 5px; }
+
+/* MODULE STYLES
+--------------------------------------------------------- */
+
+/* Badge Module ---*/
+.badge {
+	background-image: url(../images/rtl/icon-badge.png);
+	right: auto;
+	left: 0;
+}
+
+.badge-hot 	.badge { background-position: right 0; }
+
+.badge-new 	.badge { background-position: right -46px; }
+
+.badge-pick .badge { background-position: right -92px; }
+
+.badge-top 	.badge { background-position: right -138px; }
+
+/* Icon Module ---*/
+.icon1 h3 {
+	background-position: bottom right;
+	padding-left: 0 !important;
+	padding-right: 30px !important;
+}
+
+.icon2 h3 {
+	background-position: top right;
+	padding-left: 0 !important;
+	padding-right: 30px !important;
+}
+.icon3 h3 {
+	background-position: top right;
+	padding-left: 0 !important;
+	padding-right: 40px !important;
+}
+
+.icon4 h3 {
+	background-position: top right;
+	padding-left: 0 !important;
+	padding-right: 40px !important;
+}
+
+.icon5 h3 {
+	background-position: top right;
+	padding-left: 0 !important;
+	padding-right: 40px !important;
+}
+
+.icon6 h3 {
+	background-position: top right;
+	padding-left: 0 !important;
+	padding-right: 40px !important;
+}
+
+/* Search Module ---*/
+#ja-search {
+	right: auto;
+	left: 16px;
+}
+
+#ja-search .inputbox {
+	background-position: 98% center;
+	padding: 2px 22px 2px 5px;
+}
+
+#ja-search .button {
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+/* Hilite Module */
+
+/* Poll Module ---*/
+form.poll .button {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+/* Advertisement ---*/
+div.bannergroup_text div.bannerfooter_text {
+	text-align: left;
+}
+
+div.bannergroup { margin-bottom: 10px; }
+
+/* Rounded Module --- */
+
+/* text */
+div.module_text span {
+	float: right;
+}
+
+/* Blank */
+
+/* hilite */
+
+/* dark */
+
+/* hilite */
+
+/* red */
+
+/* blue */
+
+/* green */
+
+/* black */
+
+/* text color for high contrast module */
+
+/* Module list ---*/
+div.ja-moduletable ul li, div.ja-module ul li {
+	background-position: right 6px;
+	padding-left: 0;
+	padding-right: 12px;
+}
+
+/* Collapsible h3 ---*/
+h3.show {
+	background-position: left 60%;
+}
+
+h3.hide {
+	background-position: left 60%;
+}
+
+/* Uncomment the following lines if you want collapsible modules with badges still show arrows */
+/* 
+.badge-hot h3.show,.badge-new h3.show,.badge-pick h3.show,.badge-top h3.show,
+.badge-hot h3.hide,.badge-new h3.hide,.badge-pick h3.hide,.badge-top h3.hide {
+	background-position: 15px 60%;
+	text-indent: 15px;
+}
+*/
+/* MAIN LAYOUT DIVS
+--------------------------------------------------------- */
+#ja-container {
+	background-position: bottom right;
+}
+
+/* Full */
+#ja-container #ja-main {}
+
+/* Full left */
+#ja-container.ja-r1 { }
+
+/* Full right */
+#ja-container.ja-l1 { }
+
+/* 3 Columns - Classic Layout ---*/
+#ja-container.ja-l1r1 {}
+
+/* 3 Columns - 2 Columns Left Layout  ---*/
+#ja-container.ja-l2 {}
+
+/* 3 Columns - 2 Columns Right Layout [Default] ---*/
+#ja-container.ja-r2 {}
+
+/* Mass ---*/
+
+/* MAIN COLUMN
+--------------------------------------------------------- */
+
+/* Content Top ---*/
+
+/* Content Main ---*/
+
+/* Content Bottom ---*/
+
+/* @end */
+/* SIDE COLUMNS
+--------------------------------------------------------- */
+
+/* Left Columns ---*/
+#ja-left .ja-l2 { }
+
+/* Right Columns ---*/
+#ja-right .ja-r2 { }
+
+/* HEADER
+--------------------------------------------------------- */
+#ja-header {
+	background-position: right top;
+}
+
+h1.logo, div.logo-text {
+	float: right;
+	margin-right: 50px;
+	margin-left: 0;
+}
+
+/* Logo Image ---*/
+h1.logo a {
+	background-position: righ top;
+}
+
+/* Logo Text ---*/
+div.logo-text h1 { float: right; }
+
+/* Login Form */
+label.ja-login-user span {
+	background-position: right center;
+	float: right;
+}
+
+label.ja-login-password span {
+	background-position: right center;
+	float: right;
+}
+
+/* Main Nav ---*/
+#ja-mainnav .inner {	float: left; }
+
+span.has-image {
+	background-position: right 2px;
+	padding-left: 0;
+	padding-right: 25px;
+}
+
+#ja-mainnav .inner {
+	float:left;
+}
+
+/* 
+---------------------------------------------Sub Nav ---*/
+/* Sub Nav ---*/
+#ja-subnav .inner {
+	float: left;
+}
+
+#ja-subnav li { float: right; margin: 0 0 0 20px; }
+
+#ja-subnav li.first-item { border-right: 0; }
+
+#ja-subnav ul li a {
+	background-position: right center;
+	padding: 0 20px 0 0;
+}
+
+#ja-subnav ul li a:hover,
+#ja-subnav ul li a.active {
+	background-position: right center;
+}
+
+.ja-home #ja-subnav .inner {
+	margin-right: 0;
+}
+/* Sub Nav (lv2) ---*/
+#ja-subnav ul li ul {
+	background-position: right bottom;
+	left: auto;
+	right: -999%;
+	display: none;
+}
+
+#ja-subnav ul li.hover ul {
+	right: auto;
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+#ja-subnav ul li.haschild a.haschild span.menu-title {
+	background-position: left center;
+	padding-left: 12px;
+	padding-right: 0;
+}
+
+#ja-subnav ul li.hover a.haschild span.menu-title {
+	background-position: left center;
+}
+
+#ja-subnav ul li.haschild li a.haschild span.menu-title, #ja-subnav ul li.hover li a.haschild span.menu-title {
+	background-position: left center;
+	padding-left: 0;
+}
+
+#ja-subnav ul li ul li {
+	border-right: none;
+}
+
+/* Sub Nav (lv3) ---*/
+#ja-subnav ul ul li.hover ul, #ja-subnav ul ul li:hover ul {
+	right: auto;
+	margin: -2em 14em 0 0;
+}
+
+#ja-subnav ul li li.haschild a.haschild span.menu-title {
+	background-position: left center;
+	padding-right: 0;
+	padding-left: 12px;
+}
+
+/* Breadcrumbs ---*/
+
+.ja-navhelper .inner {
+	background-position: top right;
+}
+
+.ja-breadcrums { float: right; }
+
+.ja-breadcrums strong {
+	float: right;
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+.ja-breadcrums a.pathway {
+	background-position: left 7px;
+	padding-right: 0;
+	margin-right: 0;
+	padding-left: 8px;
+	margin-left: 10px;
+	float: right;
+}
+
+.ja-breadcrums span.name {
+	float: right;
+}
+
+/* Extras ---*/
+.ja-links {
+	right: auto;
+	left: 0;
+}
+
+.ja-links li.top a {
+	background-position: 95% center;
+	padding-left: 10px;
+	padding-right: 17px;
+}
+
+.ja-links li.top a:hover {
+	background-position: 95% center;
+}
+
+
+/* Default Joomla! Menu ---*/
+#ja-container ul.menu li a {
+	background-position: right center;
+}
+
+#ja-container ul.menu li a:hover,
+#ja-container ul.menu li a:active,
+#ja-container ul.menu li a:focus {
+	background-position: right center;
+}
+
+ja-container ul.menu li ul { margin: 0 15px 0 0; }
+
+#ja-container ul.menu li li a {
+	background-position: right center;
+}
+
+#ja-container ul.menu li li a:hover,
+#ja-container ul.menu li li a:active,
+#ja-container ul.menu li li a:focus {
+	background-position: right center;
+}
+
+#ja-container ul.menu li li ul { margin: 0 10px 0 0; }
+
+#ja-container ul.menu li li li a {
+	background-position: right 12px !important;
+}
+
+#ja-container ul.menu li li li a:hover,
+#ja-container ul.menu li li li a:active,
+#ja-container ul.menu li li li a:focus {
+	background-position: right center !important;
+}
+
+/* CONTENT-SPOTLIGHT
+--------------------------------------------------------- */
+
+/* SPOTLIGHT
+--------------------------------------------------------- */
+
+#ja-topsl li {
+	background-position: 98% 6px;
+	padding: 0 15px 0 0;
+}
+
+#ja-topsl ol li, #ja-botsl ol li {
+	margin: 0 20px 0 0;
+}
+
+/* Top spotlight ---*/
+#ja-topsl .main {
+	border-left: 1px solid #2a2a2a;
+	border-right: 0;
+}
+
+#ja-topsl .ja-moduletable {
+	border-left: 1px solid #2a2a2a !important;
+	border-right: 0 !important;
+}
+
+/* Bot spotlight ---*/
+#ja-botsl ul li {
+	background-position: 98% 6px;
+	padding: 0 15px 0 0;
+}
+
+#ja-botsl .inputbox {
+	background-position: right top;
+	border-right: 0;
+	border-left: 1px solid #202020;
+}
+
+#ja-botsl textarea.inputbox {	
+	background-position: right top;
+}
+
+#ja-botsl .button, .btn_link {
+	background-position: right top;
+}
+
+/* FOOTER
+--------------------------------------------------------- */
+#ja-poweredby {
+	direction: ltr;
+}
+
+/* Foot Links ---*/
+
+/* T3 Framework logo ---*/
+
+/* Copyright Info. ---*/
+
+/* MISCELLANOUS
+----------------------------------------------------------- */
+/* User Tools ---*/
+ul.ja-usertools-font,
+ul.ja-usertools-screen {
+	right: auto;
+	left: 375px;
+}
+
+/* JA Tiwitter */
+.ja-slidenews-item img {
+	float: right;
+	margin: 5px 0 0 20px;
+}
+
+/* JA Comment */
+.article-content .jac-add-button,
+.article-content .jac-links {	
+	right: auto;
+	left: 0;
+}
+
+/* Others ---*/
+
+div.ja-innerdiv img {
+	float: right;
+	margin: 2px 0 0 8px;
+}
+
+.ja-box div.ja-innerdiv img,
+.megamenu div.ja-innerdiv img {
+	float: right;
+	margin: 0 0 0 5px;
+}
+
+.module_hilite blockquote.testimonial {
+	background-position: left top;
+	padding-right: 0;
+	padding-left: 45px;
+}
+
+.author {
+	background-position: right center;
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+/* About me */
+
+/* little_desc */
+
+/* thumb */
+.menu a img {
+	float: right;
+	margin-left: 5px;
+}
+
+/*==========
+typo.css
+============*/
+/* SPECIAL CONTENT
+-----------------------------------------------------------------*/
+/* Pre, Code ---*/
+pre, .code { border-left: 0; border-right: 5px solid #ccc; }
+
+/* Dropcap ---*/
+.dropcap { float: right; padding: 7px 0 0 8px; }
+
+blockquote span.open  { background: url(../images/sc-q.gif) no-repeat right top; padding: 0 20px 0 0; float: right; }
+
+blockquote span.close {	background: url(../images/so-q.gif) no-repeat bottom left;	padding: 0 0 0 20px; display: inline-block; }
+
+/* Tips, Error, Message, Hightlight ---*/
+p.error, p.message, p.tips, p.rss, p.key, p.tag, p.cart, p.note, p.photo, p.doc, p.mobi {
+	padding-left: 0;
+	padding-right: 25px;
+}
+
+p.error span.icon, p.message span.icon, p.tips span.icon, p.rss span.icon, p.key span.icon,
+p.tag span.icon, p.cart span.icon, p.note span.icon, p.photo span.icon, p.doc span.icon, p.mobi span.icon {
+	right: 0;
+}
+
+/* Special list style ---*/
+ul.checklist li, ul.star li, ul.arrow li,
+ul.address li, ul.phone li, ul.email li {
+	margin-left: 0;
+	margin-right: 8px;
+	padding: 0 22px 0 0;
+}
+
+ul.checklist span.icon, ul.star span.icon, ul.arrow span.icon,
+ul.address span.icon, ul.phone span.icon, ul.email span.icon {
+	right: 0;
+}
+
+ul.arrow span.icon {
+	background-image: url(../images/rtl/icons-arrow.png);
+	background-position: left top;
+}
+
+ul.bookmark-links li {
+	background-position: right 10px !important;
+	padding: 5px 10px 5px 0 !important;
+}
+
+/* Big Number ---*/
+p.blocknumber { padding: 5px 55px 5px 0 !important; }
+
+.bignumber-1, .bignumber-2, .bignumber-3 { right: 0; }
+
+/* Talking box. Thinking box. ---*/
+div.bubble span.arrow {
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+div.bubble span.author {
+	background-position: 99% 3px;
+	padding-left: 0;
+	padding-right: 25px;
+}
+
+/* Box style ---*/
+.box-sticky, .box-download {
+	background-position: 99% center;
+	padding-left: 0 !important;
+	padding-right: 50px !important;
+}
+
+/* Legend ---*/
+.legend-title { float: right; left: auto; right: 7px; }
+
+/*==========
+End typo.css
+============*/
+
+/*
+---------------------------------- JA Tab */
+
+.norite .container .ja-tabs-title-top ul.ja-tabs-title {
+	left: auto;
+	right: 0;
+}
+
+.norite .container .ja-tabs-title-top ul.ja-tabs-title li {
+	float: right;
+}
+
+.norite .container .ja-tabs-title-top ul.ja-tabs-title li h3 {
+	background-position: left top ;
+}
+
+.norite .container .ja-tabs-title-top ul.ja-tabs-title li.hover { 
+	background-position: right top ;
+}
+
+.norite .container .ja-tabs-title-top ul.ja-tabs-title li.active {
+	background-position: right top ;
+}
+
+.norite .ja-tab-panels-top {
+	background-position: left top ;
+}
+
+ja-tab-content {
+	background-position: right bottom ;
+}
+
+/* JA Tabs bottom*/
+.norite .ja-tabs-title-bottom ul.ja-tabs-title li {
+	float: right;
+}
+
+.norite ul.ja-bullettin div {
+	padding-left: 0 !important;
+	padding-right: 70px !important;
+}
+
+/* 
+-------------------------------ja-bullettin */
+ul.ja-bullettin img {
+	left: auto;
+	right: 0;
+}
+
+/*
+-------------------------------general.css */
+/* Tooltips */
+div.tooltip {
+	float: right;
+}
+
+/* Caption fixes */
+.img_caption.left {
+	float: right !important;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+.img_caption.right {
+	float: left !important;
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.haveimage .img_caption.left, .haveimage .img_caption.right {
+	float: none !important;
+}
+
+/*Ja Comment*/
+#jac-social-links img {
+	background: transparent;
+	padding: 0;
+}
+
+/* SLIDESHOW
+--------------------------------------------------------- */
+.ja-slide-main {
+	left: -10px;
+	right: auto;
+	direction: ltr;
+}
+
+.ja-slide-item {
+}
+
+.ja-slide-thumbs-wrap {
+	float: left;
+	margin-right: 0;
+	margin-left: 500px;
+}
+
+.but_prev {
+	background-position: right center;
+	left: auto;
+	right: 0;
+}
+
+.but_next {
+	background-position: right center;
+	left: 0;
+	right: auto;
+}
+
+.maskdesc {
+	right: 0
+}
+
+.maskdesc a.readon {
+	background-position: left 7px;
+	padding: 0 0 0 8px;
+	right: auto;
+	left: 20px;
+}
+
+.maskdesc a.readon:hover,
+.maskdesc a.readon:active,
+.maskdesc a.readon:focus {
+	background-position: left 7px;
+}
+
+.ja-slide-buttons span {
+	float: right;
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+/*JA Sideshow [ Topspotlight 1]*/
+#ja-slideshow .ja-slide-mask {
+	right: auto;
+	left: 10px;
+}
+
+#ja-slideshow .ja-slide-thumbs-wrap {
+	right: auto;
+	left: 10px;
+}
+
+#ja-slideshow .ja-slide-buttons {
+	right: 10px;
+	left: auto;
+}
+
+#ja-slideshow .maskdesc .ja-slide-desc {
+	right: auto;
+	left: 0;
+}
+
+/* SCROLL LEFT
+-----------------------------------------*/
+/* Horizontal ---*/
+.ja-vertical_right {
+	right: auto;
+	left: 0;
+}
+
+/* horizontal ---*/
+.ja-vertical_left {
+	left: auto;
+	right: 0;
+}
+
+.ja-vertical_right .active {
+	background-position: right center;
+}
+
+.ja-vertical_left .active {
+	background-position: left center;
+}
+
+.ja-slide-right {
+	margin-right: auto;
+	left: 0;
+	right: auto;
+}
+
+.ja-slide-thumbs,
+.ja-slide-thumbs-mask,
+.ja-slide-thumbs-handles {
+	right: 20px;
+	left: auto !important;
+}
+
+.ja-slide-thumb, .ja-slide-thumbs-handles span {
+	float: right;
+}
+
+/* horizontal  */
+
+.ja-slide-thumbs-wrap .active .ja-slide-thumb-inner {
+	background-position: right top;
+}
+
+.ja-slide-thumbs-mask-left,
+.ja-slide-thumbs-mask-right,
+.ja-slide-thumbs-mask-center {
+	float: right;
+}
+
+.ja-vertical_right .ja-slide-thumbs-mask-left,
+.ja-vertical_right .ja-slide-thumbs-mask-right,
+.ja-vertical_right .ja-slide-thumbs-mask-center {
+	display: block;
+	float: none;
+}
+
+.ja-vertical_left .ja-slide-thumbs-mask-left,
+.ja-vertical_left .ja-slide-thumbs-mask-right,
+.ja-vertical_left .ja-slide-thumbs-mask-center {
+	display: block;
+	float: none;
+}
+
+.ja-slide-thumb-inner {
+	margin-left: 0;
+	margin-right: 19px;
+}
+
+.ja-vertical_left .ja-slide-thumb-inner {
+	margin-left: 19px;
+	margin-right: 0px;
+}
+
+.ja-slide-thumb-inner img {
+	margin: 15px 0 0 5px;
+}
+
+.ja-slide-thumbs-mask-left,
+.ja-slide-thumbs-mask-right,
+.ja-slide-thumbs-mask-center {
+	float: right;
+}
+
+.maskDesc {
+	left: auto !important;
+	right: 0;
+	direction: ltr;
+	padding: 30px 0 138px 500px;
+	text-align: left;
+}
+
+.maskDesc a.readon {
+	margin-right: 0;
+	margin-left: -10px;
+}
+
+/*==========
+menu/*.css
+============*/
+
+/* SPLIT
+----------------------------------------------------------- */
+.ja-home #ja-splitmenu {
+	background-position: bottom left;
+}
+
+#ja-splitmenu {
+	float: left;
+}
+
+#ja-splitmenu li {
+	background-position: bottom right;
+	float: right;
+	padding: 0 2px 0 0;
+}
+
+/* DROPLINE
+----------------------------------------------------------- */
+.ja-home #jasdl-mainnav {
+	background-position: bottom left;
+}
+
+#jasdl-mainnav {
+	float: left;
+}
+
+#jasdl-mainnav li {
+	background-position: bottom right;
+	float: right;
+	padding: 0 2px 0 0;
+}
+
+/* CSS MENU
+----------------------------------------------------------- */
+.ja-home .ja-cssmenu {
+	background-position: bottom left;
+}
+
+.ja-cssmenu {
+	float: left;
+}
+
+#ja-cssmenu li {
+	padding: 0 2px 0 0;
+	float: right;
+	background-position: bottom right;
+}
+
+#ja-cssmenu li ul {
+	left: auto; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	right: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+
+#ja-cssmenu li ul ul {
+	margin: -2em 14em 0 0; /* third-and-above-level lists */
+}
+
+#ja-cssmenu li li {
+	padding: 0 0 0 1em;
+}
+
+#ja-cssmenu li:hover ul ul, #ja-cssmenu li:hover ul ul ul,
+#ja-cssmenu li.sfhover ul ul, #ja-cssmenu li.havechildsfhover ul ul, #ja-cssmenu li.havechild-activesfhover ul ul, #ja-cssmenu li.activesfhover ul ul,
+#ja-cssmenu li.sfhover ul ul ul, #ja-cssmenu li.havechildsfhover ul ul ul, #ja-cssmenu li.havechild-activesfhover ul ul ul, #ja-cssmenu li.activesfhover ul ul ul {
+	left: auto;
+	right: -999em;
+}
+
+/* This "unhides" the sub-menus (left: -999em is what hides them) */
+#ja-cssmenu li:hover ul, #ja-cssmenu li li:hover ul, #ja-cssmenu li li li:hover ul,
+#ja-cssmenu li.sfhover ul, #ja-cssmenu li.havechildsfhover ul, #ja-cssmenu li.havechild-activesfhover ul, #ja-cssmenu li.activesfhover ul,
+#ja-cssmenu li li.sfhover ul, #ja-cssmenu li li.havesubchildsfhover ul, #ja-cssmenu li li.havesubchild-activesfhover ul, #ja-cssmenu li li.activesfhover ul,
+#ja-cssmenu li li li.sfhover ul, #ja-cssmenu li li li.havesubchildsfhover ul, #ja-cssmenu li li li.havesubchild-activesfhover ul, #ja-cssmenu li li li.activesfhover ul {
+	right: auto;
+}
+
+/* STYLING THE MENU
+-----------------------------------*/
+/* 1st level */
+/* 2nd level and above */
+#ja-cssmenu li ul {
+	background-position: right bottom;
+	text-align: right;
+}
+
+#ja-cssmenu li ul a {
+	padding: 8px 20px 8px 0;
+	background-position: right center;
+}
+
+#ja-cssmenu li.havesubchild a.haschild span.menu-title,
+#ja-cssmenu li.havesubchildsfhover a.haschild span.menu-title,
+#ja-cssmenu li.havesubchild-active a.haschild span.menu-title {
+	background-position: 5px 50%;
+}
+
+#ja-cssmenu li ul a:hover,
+#ja-cssmenu li ul a:active,
+#ja-cssmenu li ul a:focus {
+	background-position: right center;
+}
+
+#ja-cssmenu ul li a.active,
+#ja-cssmenu ul li a.active:hover,
+#ja-cssmenu ul li a.active:active,
+#ja-cssmenu ul li a.active:focus {
+	background-position: right center !important;
+}
+/* End cssmenu*/
+
+/* MEGA MENU
+----------------------------------------------------------- */
+
+/* lv - 0
+-----------------------------------*/
+.ja-home .ja-megamenu {
+	background-position: bottom left;
+}
+
+/* Styling ---*/
+.ja-megamenu {
+	float: left;
+}
+
+ul.level0 {
+	background-position: bottom left;
+}
+
+ul.level0 li.mega {
+	background-position: right bottom;
+	padding: 0 2px 0 0;
+	float: right;
+}
+
+ul.level0 li.mega .has-image {
+	padding-left: 0;
+	padding-right: 25px;
+	background-position: right top;
+}
+
+ul.level0 li.mega a img {
+	float: right;
+	padding-left: 5px;
+	padding-right: 0;
+}
+
+ul.level0 li.haschild a.mega span.menu-desc,
+ul.level0 li.haschild-over a.mega span.menu-desc {
+	padding-left: 12px;
+	padding-right: 0;
+}
+
+/* lv - 1 and below
+-----------------------------------*/
+/* Layout ---*/
+.ja-megamenu li.haschild-over .right
+{ left: 0; right: auto; /*show on parent:hover*/ }
+
+.ja-megamenu li.mega li.haschild-over .right,
+.ja-megamenu li.mega li.mega li.haschild-over .right,
+.ja-megamenu li.mega li.mega li.mega li.haschild-over .right,
+.ja-megamenu li.mega li.mega li.mega li.mega li.haschild-over .right,
+.ja-megamenu li.mega li.mega li.mega li.mega li.mega li.haschild-over .right 
+{
+	right: auto; /*show on parent:hover*/
+	left: 12em;
+}
+
+ul.level0 .childcontent {
+	margin-left: 0;
+	margin-right: -7px;
+}
+
+ul.level1 li.mega { float: none; }
+
+ul.level1 .childcontent { margin: -32px 160px 0 0; }
+
+ /* Columns ---*/
+.megacol { float: right;  }
+
+/* Styling ---*/
+ul.level1 li.haschild a.haschild span {
+	background-position: 10px 5px;
+}
+
+ul.level1 li.haschild-over a.haschild span {
+	background-position: 10px 5px;
+}
+
+ /* CHILD CONTENT
+-----------------------------------*/
+.childcontent {
+	padding-left: 0;
+	padding-right: 10px;
+}
+
+/* Top ---*/
+.childcontent .top {
+	background-position: right top;
+}
+
+/* Middle ---*/
+.childcontent .ml {
+	background-position: bottom right;
+	left: auto;
+	right: -8px;
+}
+
+.childcontent .mr {
+	background-position: bottom left;
+	right: auto;
+	left: -8px;
+}
+
+/* Bottom ---*/
+ul.level1 .childcontent .top {
+	background-position: right top;
+}
+
+ul.level1 .childcontent .tl {
+	background-position: top right;
+	left: auto;
+	right: -8px;
+}
+
+ul.level1 .childcontent .tr {
+	background-position: top left;
+	right: auto;
+	left: -8px;
+}
+
+ul.level1 .childcontent .ml {
+	background-position: bottom right;
+}
+
+ul.level1 .childcontent .mr {
+	background-position: bottom left;
+}
+
+.childcontent .ja-moduletable a {
+	padding-right: 0 !important;
+}
+.childcontent .ja-moduletable li {
+	background-position: right 7px !important;
+}
+
+.childcontent .ja-moduletable li:hover {
+	background-position: right 7px !important;
+}
+
+/* Grouped --- */
+ul.level0 li.mega .childcontent .childcontent-inner li a {
+	background-position: right 12px;
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+ul.level0 li.mega .childcontent .childcontent-inner li a:hover,
+ul.level0 li.mega .childcontent .childcontent-inner li a:focus,
+ul.level0 li.mega .childcontent .childcontent-inner li a.active {
+	background-position: right 12px;
+}
+
+ul.level0 li.mega .megacol li.group {
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+ul.level0 li.mega .megacol.first li.group {
+	margin-right: 0px;
+}
+
+/* End mega --- */
+
+/* popup */
+#bd {
+	direction: ltr;
+}
+
+#sbox-window, #ja-wrapper {
+	direction: rtl;
+}
+
+
+/* COMMONT ELEMENTS K2
+----------------------------------------------------------------------*/
+
+/* Global K2 container ---*/
+#k2Container .latestItemList ul li {
+	padding-right: 0;	
+}
+
+.commentslink {
+	background-position: right 2px;
+	padding: 3px 20px 3px 3px;
+	display: inline-block;
+}
+
+/* RSS feed icon --- */
+div.k2FeedIcon {
+	float: left;
+}
+
+div.k2FeedIcon a,
+div.k2FeedIcon a:hover {
+	float: left;
+}
+
+/* Rating --- */
+.itemRatingForm {
+	float: right;
+}
+
+.itemRatingLog {
+	padding: 0 4px 0 0;
+	float: right;
+}
+
+div.itemRatingForm .formLogLoading {
+	background-position: right center;
+	padding: 0 20px 0 0;
+}
+
+.ItemRatingList {
+	background-position: right 0px;
+	float: right;
+}
+
+.ItemRatingList li {	
+	float: right;
+}
+
+.ItemRatingList a,
+.ItemRatingList .itemCurrentRating {
+	left: auto;
+	right: 0;
+	text-indent: 1000px
+}
+
+.ItemRatingList a:hover { background-position: right bottom; }
+
+#k2Container .ItemRatingList a.one-star:hover,
+#k2Container .ItemRatingList a.two-stars:hover,
+#k2Container .ItemRatingList a.three-stars:hover,
+#k2Container .ItemRatingList a.four-stars:hover,
+#k2Container .ItemRatingList a.five-stars:hover  {
+	background-position: right bottom;
+}
+
+#k2Container .ItemRatingList .itemCurrentRating {
+	background-position: right -26px;
+}
+
+/* COMPONENT ITEM VIEW
+----------------------------------------------------------------------*/
+span.itemEditLink {
+	text-align: left;
+}
+
+div.itemToolbar ul {
+	float: right;
+	text-align: left;
+}
+
+div.itemToolbar ul li {
+	padding: 0 8px 0 4px;
+	border-right: 1px solid #2a2a2a;
+	border-left: 0;
+}
+
+div.ItemRatingBlock span {
+	float: right;
+	padding: 3px 0 0 4px;
+}
+
+div.ItemImageBlock {
+	float: right;
+}
+
+span.ItemImage {
+	margin: 4px 0 4px 15px;
+}
+
+span.ItemImageCaption {
+	float: left;
+}
+
+span.ItemImageCredits {
+	float: left;
+}
+
+/* Extra Fields ---*/
+div.ItemExtraFields ul li span.ItemExtraFieldsLabel {
+	float: right;
+	margin: 0 0 0 4px;
+}
+
+span.itemTwitterLink a {
+	background-position: right 50%;
+	padding: 2px 20px 0 0;
+}
+
+div.ItemCategory span {
+	padding: 0 0 0 4px;
+}
+	
+div.ItemTagsBlock span {
+	font-weight: bold;
+	padding: 0 0 0 4px;
+}
+
+div.ItemTagsBlock ul.ItemTags li {
+	padding: 0 0 0 4px;
+}
+
+/* Social link block ---*/
+div.itemSocialLinksBlock span {
+	padding: 0 0 0 4px;
+	float: right;
+}
+
+div.itemSocialLinksBlock ul.itemSocialLinks {
+	float: right;
+}
+
+div.itemSocialLinksBlock ul.itemSocialLinks li {
+	float: right;
+}
+
+div.itemSocialLinksBlock ul.itemSocialLinks li a {
+	float: right;
+}
+
+div.ItemAttachmentsBlock span {
+	padding: 0 0 4px;
+}
+
+/* Author block ---*/
+div.itemAuthorBlock img.itemAuthorAvatar {
+	float: right;
+	margin: 0 0 10px 8px;
+}
+
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorUrl,
+div.itemAuthorBlock div.itemAuthorDetails span.itemAuthorEmail {
+	background-position: right 6px;
+	padding: 0 10px 0 8px;
+	margin: 0 0 0 4px;
+}
+
+/* Video */
+div.itemVideoBlock {
+	background-position: right bottom;
+}
+
+div.itemVideoBlock span.itemVideoCaption {
+	float: right;
+}
+
+div.itemVideoBlock span.itemVideoCredits {
+	float: left;
+	text-align: left;
+}
+	
+/* Article navigation ---*/
+
+/* Comments */
+div.itemComments ul.itemCommentsList li img {
+	float: right;
+	margin: 5px 0 0 10px;
+}
+
+div.itemComments ul.itemCommentsList li span.commentDate {
+	padding: 0 0 0 4px;
+	margin: 4px 0 0 8px;
+	border-left: 1px solid #2A2A2A;
+	border-right: 0;
+	float: right;
+	line-height: 15px;
+	height: 15px;
+}
+
+div.itemComments ul.itemCommentsList li span.commentLink { float: left; }
+
+div.itemCommentsPagination span.pagination {
+	float: left;
+}
+
+/* Comment form ---*/
+div.itemCommentsForm form label.formName {
+	margin: 12px 2px 0 0;
+}
+
+div.itemCommentsForm form label.formEmail {
+	margin: 12px 2px 0 0;
+}
+
+div.itemCommentsForm form label.formUrl {
+	margin: 12px 2px 0 0;
+}
+
+div.itemCommentsForm form label.formRecaptcha {
+	margin: 12px 2px 0 0;
+}
+
+div.itemCommentsForm form input.button {
+	background-position:right bottom;
+}
+
+div.itemCommentsForm form input.button:hover {
+	background-position: right bottom;	
+}
+
+div.itemCommentsForm form span#formLog {
+	margin: 0 20px 0 0;
+	padding: 0 20px 0 0;
+}
+
+div.itemCommentsForm form .formLogLoading {
+	background-position: right center;
+}
+
+/* Back to top link ---*/
+div.itemBackToTop { text-align: left; }
+
+/* COMPONENT: ITEMLIST VIEW (Category)
+----------------------------------------------------------------------*/
+
+/* Category block --- */
+span.catItemAddLink {
+	text-align: left;
+}
+
+div.itemListCategory img {
+	float: right;
+	margin: 0 0 0 8px;
+}
+
+/* Sub-category block ---*/
+div.subCategoryContainer {
+	float: right;
+}
+
+/* Item groups --- */
+div.itemContainer {
+	float: right;
+}
+
+/* Additional class appended to the element above for further styling per group item */
+span.catItemEditLink {
+	text-align: left;
+}
+
+/* Video ---*/
+div.catItemVideoBlock {
+	background-position: right bottom;
+}
+
+/* Anchor link to comments ---*/
+div.catItemCommentsLink {
+	float: right;
+	margin: 0 0 0 4px;
+	padding: 0 0 0 4px;
+	border-left: 1px dotted #2a2a2a;
+	border-right: 0;
+	line-height: 1;
+	margin-top: 6px;
+}
+
+/* COMPONENT: ITEMLIST VIEW (User)
+----------------------------------------------------------------------*/
+
+/* User info block ---*/
+span.userItemAddLink {
+	text-align: left;
+}
+
+span.userItemAddLink a { }
+span.userItemAddLink a:hover { }
+		
+div.userBlock img {
+	float: right;
+	margin: 0 0 0 8px;
+}
+
+/* User items ---*/
+span.userItemEditLink {
+	text-align: left;
+}
+
+/* Anchor link to comments ---*/
+div.userItemCommentsLink {
+	margin: 0 0 0 8px;
+	padding: 0 0 0 8px;
+	border-right: 1px solid #2a2a2a;
+	border-left: 0
+}
+
+/* COMPONENT: LATEST VIEW
+----------------------------------------------------------------------*/
+div.latestItemsCategoryImage img {
+	margin: 0 0 0 10px;
+}
+
+/* User info block ---*/
+div.latestItemsUser {
+	margin: 0 0 8px 8px;
+}
+
+div.latestItemsUser img {
+	float: right;
+	margin: 0 0 0 8px;
+}
+
+/* Video ---*/
+div.latestItemVideoBlock {
+	background-position: right bottom;
+}
+
+/* Anchor link to comments ---*/
+div.latestItemCommentsLink {
+	float: right;
+	margin: 0 0 0 8px;
+	padding: 0 0 0 8px;
+	border-left: 1px solid #2a2a2a;
+	border-right: 0;
+	line-height: 1;
+	margin-top: 6px;
+}
+
+/*	COMPONENT: REGISTER & PROFILE PAGE VIEWS
+----------------------------------------------------------------------*/
+.k2AccountPage div.k2AccountPageUpdate {
+	padding-right: 125px;
+	padding-left: 0;
+}
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_comments
+----------------------------------------------------------------------*/
+
+/* Latest Comments */
+div.k2LatestCommentsBlock ul li img.lcAvatar {
+	float: right;
+	margin: 2px 0 4px 10px;
+}
+
+div.k2LatestCommentsBlock ul li span.lcUsername {
+	border-left: 1px dotted #656565;
+	border-right: 0;
+	margin-right: 0;
+	padding-right: 0;
+	margin-left: 5px;
+	padding-left: 5px;
+	float: right;
+	line-height: 1;
+	margin-top: 6px;
+}
+
+/* Top Commenters */
+div.k2TopCommentersBlock ul li img.tcAvatar {
+	float: right;
+	margin: 2px 0 4px 4px;
+}
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_content
+----------------------------------------------------------------------*/
+div.k2ItemsBlock ul li img.moduleItemAuthorAvatar {
+	float: right;
+	margin: 0 0 0 4px;
+}
+
+div.k2ItemsBlock ul li p.moduleItemIntrotext a.moduleItemImage img {
+	float: right;
+	margin: 5px 0 0 10px;
+}
+
+ul.moduleItemExtraFields li span.moduleItemExtraFieldsLabel {
+	float: right;
+	margin: 0 0 0 4px;
+}
+
+div.k2ItemsBlock ul li a.moduleItemComments,
+div.k2ItemsBlock ul li span.moduleItemHits {
+	border-left: 1px dotted #2a2a2a;
+	border-right: 0;
+	padding: 0 0 0 4px;
+	margin: 0 0 0 4px;
+	float: right;
+	line-height: 1;
+	margin-top: 6px;
+}
+/*----------------------------------------------------------------------
+	Modules: mod_k2_login
+----------------------------------------------------------------------*/
+div.k2UserBlock p img {
+	float: right;
+	margin: 2px 0 4px 4px;
+}
+
+/*----------------------------------------------------------------------
+	Modules: mod_k2_tools
+----------------------------------------------------------------------*/
+div.k2AuthorsListBlock ul li img.abAuthorAvatar {
+	float: right;
+	margin: 2px 0 4px 4px;
+}
+
+/* --- Breadcrumbs --- */
+div.k2BreadcrumbsBlock span.bcTitle {
+	padding: 0 0 0 4px;
+}
+
+/* --- Calendar --- */
+table.calendar tr td.calendarNavMonthPrev {
+	text-align: right;
+}
+
+table.calendar tr td.calendarNavMonthNext {
+	text-align: left;
+}
+
+/* --- Category Tree Select Box --- */
+
+div.k2TagCloudBlock a {
+	float: right;
+}
+
+div.k2TagCloudBlock a:hover {
+	float: right;
+}
+
+/* --- Google Search --- */
+#k2Container div.gsc-branding-text { text-align: left; }
+
+.ja-firstItemSubCategories .subCategory {
+	margin-right: 0;
+}
+
+/* --- */
+span.itemHits,
+div.ItemCategory span,
+div.ItemTagsBlock span {
+	float: right;
+}
+
+div.ItemAttachmentsBlock ul.ItemAttachments li {
+	float: right;
+}
+
+.itemHitsTwitter span {
+	float: right;
+}
+
+div.ItemAttachmentsBlock span {
+	float: right;
+}
+
+div.ItemAttachmentsBlock ul.ItemAttachments {
+	float: right;
+	direction: ltr;
+}
+
+div.ItemAttachmentsBlock .ItemAttachments span {
+	float: none;
+}
+/*--------------------------------end K2 */

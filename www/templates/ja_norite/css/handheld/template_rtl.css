@@ -1,0 +1,102 @@
+/*
+# ------------------------------------------------------------------------
+# JA Norite template for Joomla 1.5.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+/* NAVIGATION
+--------------------------------------------------------- */
+
+.main { margin: 0 auto; }
+
+h1.logo, div.logo-text { float: none; margin: 0 auto;}
+
+#ja-mainnav select {
+	float: right;
+	margin-left: auto;
+	margin-right: .5em;
+}
+
+#ja-login fieldset { background-image: none; padding: 0 10px;}
+
+#ja-login form fieldset .button {
+	margin: 10px 0 0 0;
+}
+
+#ja-login #form-login p {
+	padding:0 10px 5px 0;
+}
+
+#ja-login form ul li {
+	float:none;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+
+#ja-login form #form-login-password {
+	margin-right: 0;
+}
+
+#ja-footer small {
+	padding: 5px 0 0 0;
+}
+
+#ja-toolbar-main ul li {
+	padding-right: 0px;
+}
+
+#ja-footer .ja-breadcrums {
+	color:#F8F8F8;
+}
+
+#ja-footer strong, #ja-footer span {
+	color: #000;	
+}
+
+#ja-footer a strong {
+	color: #fda40a;
+}
+
+.sublogo {
+	padding-left: 20px;
+	padding-right: 0;
+}
+
+.counter {
+	float: right;
+	text-align: right;
+}
+
+/* */
+.ja-links {
+	float: left;
+}
+.ja-links li {
+	float: right;
+}
+
+.haveimage, .article_column .haveimage {
+	padding-right: 0 !important;
+}
+
+.article-image {
+	float: right;
+}
+
+#ja-search {
+	float: right;
+}
+
+#ja-search .inputbox {
+	padding: 5px 20px 5px 5px;
+	float: right;
+}

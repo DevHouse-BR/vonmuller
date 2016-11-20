@@ -1,0 +1,70 @@
+/*
+# ------------------------------------------------------------------------
+# JA Norite template for Joomla 1.5.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+#ja-left .ja-l2 .ja-left1, #ja-left .ja-l2 .ja-left2,
+#ja-right .ja-r2 .ja-right1, #ja-right .ja-r2 .ja-right2 { width: 49.99%; }
+
+#ja-left .ja-l2 .ja-left2, #ja-right .ja-r2 .ja-right2 { float: right; }
+
+.cols2 .article_column { width: 49.99%; }
+
+.cols3 .article_column { width: 33.3%; }
+
+.cols4 .article_column { width: 24.99%; }
+
+.cols5 .article_column { width: 19.99%; }
+
+/*
+*html #ja-wrapper { margin-top: 205px; }
+*/
+/* clearfix ---*/
+#ja-subnav ul, ul.pagination li span, ul.pagination a, #ja-footnav, 
+.counter span, .contentdescription, .leading,
+.column ul li, .ja-moduletable li, .ja-module li { zoom: 1; }
+
+#ja-subnav ul li a {
+	zoom: 1;
+}
+
+#ja-footnav { width: 100%; }
+
+/* Typography ---*/
+p.error, p.message, p.tips, p.rss, p.key, p.tag, p.cart, p.note, p.photo, p.doc, p.mobi,
+p.blocknumber, div.bubble div.box-ct { zoom: 1; }
+
+.bignumber-1, .bignumber-2, .bignumber-3 { line-height: 44px; }
+
+
+
+#ja-botsl textarea.inputbox {	height: 60px !important; }
+
+
+*:first-child+html ul.pagination a {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* COMMENT LIST ---*/
+*:first-child+html #jac-wrapper .jac-row-comment {
+	zoom: 1;
+}
+
+#btlAddNewComment {
+	border: 0 !important;
+}
+
+/*pagination*/
+ul.pagination a {
+	line-height: 23px;
+}

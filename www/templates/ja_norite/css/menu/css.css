@@ -1,0 +1,201 @@
+/*
+# ------------------------------------------------------------------------
+# JA Norite template for Joomla 1.5.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+
+/* Son of Suckerfish Dropdowns
+---------------------------------------------------------
+Originally developed by Patrick Griffiths and Dan Webb
+http://www.htmldog.com/articles/suckerfish/dropdowns/
+---------------------------------------------------------
+NOTE: After a deep research, we decide to divide this
+CSS into 2 parts. The first part will define the layout.
+The second part will define the visual look for this menu.
+---------------------------------------------------------*/
+
+.ja-home .ja-cssmenu {
+	background: url(../../images/mainnav-sep.gif) no-repeat bottom right;
+}
+
+.ja-cssmenu {
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#ja-cssmenu ul {
+	margin: 0; /* all lists */
+	padding: 0;
+}
+
+#ja-cssmenu li {
+	background: url(../../images/mainnav-sep.gif) no-repeat bottom left;
+	float: left;
+	margin: 0; /* all list items */
+	padding: 0 0 0 2px;
+	cursor: pointer;
+}
+
+#ja-cssmenu li ul {
+	width: 16.4em;
+	position: absolute; /* second-level lists */
+	z-index: 99;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	height: auto;
+	w\idth: 15.9em;
+}
+
+#ja-cssmenu li ul ul {
+	margin: -2em 0 0 14em; /* third-and-above-level lists */
+}
+
+#ja-cssmenu li li {
+	padding: 0 1em 0 0;
+	margin: 0;
+	width: 14.9em;
+}
+
+#ja-cssmenu ul a {
+	width: 14.8em;
+	w\idth: 10.8em;
+}
+
+#ja-cssmenu li:hover ul ul, #ja-cssmenu li:hover ul ul ul,
+#ja-cssmenu li.sfhover ul ul, #ja-cssmenu li.havechildsfhover ul ul, #ja-cssmenu li.havechild-activesfhover ul ul, #ja-cssmenu li.activesfhover ul ul,
+#ja-cssmenu li.sfhover ul ul ul, #ja-cssmenu li.havechildsfhover ul ul ul, #ja-cssmenu li.havechild-activesfhover ul ul ul, #ja-cssmenu li.activesfhover ul ul ul {
+	left: -999em;
+}
+
+/* This "unhides" the sub-menus (left: -999em is what hides them) */
+#ja-cssmenu li:hover ul, #ja-cssmenu li li:hover ul, #ja-cssmenu li li li:hover ul,
+#ja-cssmenu li.sfhover ul, #ja-cssmenu li.havechildsfhover ul, #ja-cssmenu li.havechild-activesfhover ul, #ja-cssmenu li.activesfhover ul,
+#ja-cssmenu li li.sfhover ul, #ja-cssmenu li li.havesubchildsfhover ul, #ja-cssmenu li li.havesubchild-activesfhover ul, #ja-cssmenu li li.activesfhover ul,
+#ja-cssmenu li li li.sfhover ul, #ja-cssmenu li li li.havesubchildsfhover ul, #ja-cssmenu li li li.havesubchild-activesfhover ul, #ja-cssmenu li li li.activesfhover ul {
+	left: auto;
+}
+
+/* STYLING THE MENU
+-----------------------------------*/
+/* 1st level */
+#ja-cssmenu li a {
+	color: #656565;
+	display: block;
+	font-size: 130%;
+	font-size: 110%;
+	font-weight: bold;
+	margin: 0;
+	padding: 13px 15px;
+	text-decoration: none;
+}
+
+#ja-cssmenu li a:hover,
+#ja-cssmenu li a:active,
+#ja-cssmenu li a:focus,
+#ja-cssmenu li a.sfhover {
+	color: #890;
+}
+
+#ja-cssmenu li:hover,
+#ja-cssmenu li.sfhover,
+#ja-cssmenu li.havechildsfhover,
+#ja-cssmenu li.havechild-activesfhover {
+	color: #890;
+}
+
+#ja-cssmenu li a.active,
+#ja-cssmenu li a.active:hover,
+#ja-cssmenu li a.active:active,
+#ja-cssmenu li a.active:focus {
+	background: url(../../images/mainnav-active.gif) no-repeat center bottom;
+	color: #fff;
+}
+
+/* 2nd level and above */
+#ja-cssmenu li ul {
+	background: url(../../images/mainnav-grad.gif) repeat-x bottom left #202020;
+	border: 1px solid #2a2a2a;
+	padding: 10px 20px 25px;
+	text-align: left;
+	margin-top: -1px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+
+#ja-cssmenu li ul ul {
+	border-top: 1px solid #2a2a2a;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#ja-cssmenu li ul li {
+	border: 0 !important;
+	background: url(../../images/line-sep.gif) no-repeat bottom center;
+	margin: 0;
+}
+
+#ja-cssmenu li ul a {
+	border: 0 !important;
+	padding: 8px 0 8px 20px;
+	width: 170px;
+	background: url(../../images/bullet3.gif) no-repeat left center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #c5c5c5;
+	line-height: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-shadow: none !important;
+}
+
+
+#ja-cssmenu li ul a.first-item { border-top: none; }
+
+#ja-cssmenu li.havesubchild a.haschild span.menu-title,
+#ja-cssmenu li.havesubchildsfhover a.haschild span.menu-title,
+#ja-cssmenu li.havesubchild-active a.haschild span.menu-title {
+	display: block;
+	background: url(../../images/arrow-01.gif) no-repeat 101% 5px;
+}
+
+#ja-cssmenu li ul a:hover,
+#ja-cssmenu li ul a:active,
+#ja-cssmenu li ul a:focus,
+#ja-cssmenu ul li:hover,
+#ja-cssmenu ul li.sfhover,
+#ja-cssmenu ul li.havesubchildsfhover,
+#ja-cssmenu ul li.havesubchild-activesfhover,
+#ja-cssmenu ul ul li:hover,
+#ja-cssmenu ul ul li.sfhover,
+#ja-cssmenu ul ul li.havesubchildsfhover,
+#ja-cssmenu ul ul li.havesubchild-activesfhover {
+	color: #fff;
+}
+
+#ja-cssmenu li ul a:hover,
+#ja-cssmenu li ul a:active,
+#ja-cssmenu li ul a:focus {
+	background: url(../../images/bullet4.gif) no-repeat left center;
+	color: #890;
+}
+
+#ja-cssmenu ul li a.active,
+#ja-cssmenu ul li a.active:hover,
+#ja-cssmenu ul li a.active:active,
+#ja-cssmenu ul li a.active:focus {
+	background: url(../../images/bullet4.gif) no-repeat left center !important;
+	color: #890;
+}
+

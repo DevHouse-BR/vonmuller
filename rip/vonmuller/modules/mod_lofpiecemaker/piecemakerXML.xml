@@ -1,0 +1,32 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<Piecemaker>
+<Settings>
+    <imageWidth>820</imageWidth>
+    <imageHeight>280</imageHeight>
+    <segments>7</segments>
+    <tweenTime>1.2</tweenTime>
+    <tweenDelay>0.1</tweenDelay>
+    <tweenType>easeInOutExpo</tweenType>
+    <zDistance>0</zDistance>
+    <expand>20</expand>
+    <innerColor>0x111111</innerColor>
+    <textBackground>0x031933</textBackground>
+    <shadowDarkness>100</shadowDarkness>
+    <textDistance>25</textDistance>
+    <autoplay>3</autoplay>
+</Settings>
+<Image Filename="images/slides/50.jpg"></Image>
+<Image Filename="images/slides/584.jpg"></Image>
+<Image Filename="images/slides/f 29g8.jpg"></Image>
+<Image Filename="images/slides/img4_5424.jpg"></Image>
+<Image Filename="images/slides/imgi_990806.jpg"></Image>
+<Image Filename="images/slides/img_0165.jpg"></Image>
+<Image Filename="images/slides/img_081111.jpg"></Image>
+<Image Filename="images/slides/img_3470.jpg"></Image>
+<Image Filename="images/slides/img_4438.jpg"></Image>
+<Image Filename="images/slides/img_4552.jpg"></Image>
+<Image Filename="images/slides/img_5309.jpg"></Image>
+<Image Filename="images/slides/s_12.jpg"></Image>
+<Image Filename="images/slides/s_16.jpg"></Image>
+</Piecemaker>

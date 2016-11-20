@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Blog</title>
+		<description>Fotógrafo de Casamentos e Eventos em Joinville e Região.</description>
+		<link>http://localhost/vonmuller/blog.html</link>
+		<lastBuildDate>Sun, 20 Nov 2016 01:00:28 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<language>pt-br</language>
+		<item>
+			<title>Karine e Glauber</title>
+			<link>http://localhost/vonmuller/blog/17-karina-e-glauber.html</link>
+			<guid>http://localhost/vonmuller/blog/17-karina-e-glauber.html</guid>
+			<description><![CDATA[<img width="200" src="http://localhost/vonmuller/images/stories/Karine_e_Glauber/Imagem_271_Custom.jpg" alt="Imagem_271_Custom" height="133" style="float: left; margin: 6px;" />
+<div>
+<p>&nbsp;Glauber Guise de Bitencout e Kanine Hengler casarão no dia 18 de dezembro de 2010.</p>
+<p>A cerimônia foi realizada na igreja nossa senhora de Alexandria, os convidados foram recepcinados no clube Grêmio&nbsp;<b>whirlpool.</b></p>
+<p> </p>
+]]></description>
+			<author>von.muller@hotmail.com (wander)</author>
+			<category>Blog</category>
+			<pubDate>Mon, 31 Jan 2011 13:05:21 +0000</pubDate>
+		</item>
+		<item>
+			<title>Simone e Zeno</title>
+			<link>http://localhost/vonmuller/blog/16-simone-e-zeno.html</link>
+			<guid>http://localhost/vonmuller/blog/16-simone-e-zeno.html</guid>
+			<description><![CDATA[<img style="float: left; margin: 6px;" alt="IMG_9945_Custom" height="133" width="200" src="http://localhost/vonmuller/images/stories/Simone_e_Zeno/IMG_9945_Custom.jpg" />
+<div></div>
+<div>Simone e Zeno uniram-se em Matrimônio no dia 08 de Janeiro de 2011.</div>
+<p>Na igreja Nossa Senhora de Fátima, na rua xv de novembro.</p>
+<div>Após a Cerimônia os convidados farão recepcionados no salão príncipe na BKR Eventos.</div>
+<div></div>
+<div></div>
+<div>
+]]></description>
+			<author>von.muller@hotmail.com (wander)</author>
+			<category>Blog</category>
+			<pubDate>Sat, 29 Jan 2011 21:27:37 +0000</pubDate>
+		</item>
+		<item>
+			<title>Bodas de Prata </title>
+			<link>http://localhost/vonmuller/blog/14-bodas-de-prata-.html</link>
+			<guid>http://localhost/vonmuller/blog/14-bodas-de-prata-.html</guid>
+			<description><![CDATA[<p><img width="200" src="http://localhost/vonmuller/images/stories/Bodassolenirecelso/Imagem_087_Small_2_Custom.jpg" alt="Imagem_087_Small_2_Custom" height="133" style="float: left; margin: 6px;" />No dia 06 de Janeiro de 2011 o casal Solenir&nbsp;e Celso Nieues comemorou 25 anos de casamento bodas de prata</p>
+<p>A cerimônia foi celebrada na igreja Matriz de Joinville São Francisco Xavier.</p>
+<p>Após a cerimônia os convidados foram recepcionados no salão principal do BKR Eventos.</p>
+]]></description>
+			<author>von.muller@hotmail.com (wander)</author>
+			<category>Blog</category>
+			<pubDate>Sat, 29 Jan 2011 17:39:19 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

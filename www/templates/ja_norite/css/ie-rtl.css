@@ -1,0 +1,236 @@
+/*
+# ------------------------------------------------------------------------
+# JA Norite template for Joomla 1.5.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+
+/* NAVIGATION
+--------------------------------------------------------- */
+/* Breadcrumbs ---*/
+.ja-breadcrums { direction: ltr; }
+
+.ja-breadcrums a, 
+.ja-breadcrums span.name, 
+.ja-breadcrums strong { direction: rtl; }
+
+/* Extras ---*/
+.ja-links { float: left; direction: ltr; }
+.ja-links a { direction: rtl; }
+
+/* Mainnav
+----------------------------------------------------------- */
+#ja-mainnav .inner{
+}
+
+/* SPLIT + DROPLINE (Subnav)
+----------------------------------------------------------- */
+#ja-subnav {
+	direction: ltr;
+}
+
+#ja-subnav li li {
+	direction: rtl;
+}
+
+#ja-subnav .inner {
+	margin-right: 400px;
+}
+
+/* Sub Nav (lv2) ---*/
+#ja-subnav ul, #ja-subnav ul li a { direction: rtl; }
+#ja-subnav ul li{
+	position: relative;
+}
+
+#ja-subnav ul li li{
+	position: static;
+}
+
+#ja-subnav ul li ul {
+	display: none;
+}
+
+#ja-subnav ul li.hover ul {
+	right: 0 !important;
+	display: block;
+}
+
+/* Sub Nav (lv3) ---*/
+#ja-subnav ul li.hover ul ul { display: none; }
+
+#ja-subnav ul ul li.hover ul, #ja-subnav ul ul li:hover ul {
+	display: block;
+	right: 0 !important;
+}
+
+#ja-subnav ul li li.haschild a.haschild span.menu-title {
+	display: block;
+}
+
+/* CSS + MOO
+----------------------------------------------------------- */
+#ja-cssmenu li ul {
+	top: -999em;
+	right: 0;
+}
+
+#ja-cssmenu li{
+	position: relative;
+	zoom: 1;
+}
+
+#ja-cssmenu li li{
+	position: static;
+}
+
+#ja-cssmenu li:hover ul ul, #ja-cssmenu li:hover ul ul ul,
+#ja-cssmenu li.sfhover ul ul, #ja-cssmenu li.havechildsfhover ul ul, #ja-cssmenu li.havechild-activesfhover ul ul, #ja-cssmenu li.activesfhover ul ul,
+#ja-cssmenu li.sfhover ul ul ul, #ja-cssmenu li.havechildsfhover ul ul ul, #ja-cssmenu li.havechild-activesfhover ul ul ul, #ja-cssmenu li.activesfhover ul ul ul {
+	top: -999em;
+	right: 0;
+}
+
+#ja-cssmenu li:hover ul, #ja-cssmenu li li:hover ul, #ja-cssmenu li li li:hover ul,
+#ja-cssmenu li.sfhover ul, #ja-cssmenu li.havechildsfhover ul, #ja-cssmenu li.havechild-activesfhover ul, #ja-cssmenu li.activesfhover ul,
+#ja-cssmenu li li.sfhover ul, #ja-cssmenu li li.havesubchildsfhover ul, #ja-cssmenu li li.havesubchild-activesfhover ul, #ja-cssmenu li li.activesfhover ul,
+#ja-cssmenu li li li.sfhover ul, #ja-cssmenu li li li.havesubchildsfhover ul, #ja-cssmenu li li li.havesubchild-activesfhover ul, #ja-cssmenu li li li.activesfhover ul {
+	top: auto;
+	right: 0;
+}
+
+/* MEGA MENU
+----------------------------------------------------------- */
+.megamenu li {
+	zoom: 1;
+}
+.ja-megamenu ul, .ja-megamenu li a { direction: rtl; }
+
+.ja-megamenu li.mega .childcontent,
+.ja-megamenu li.haschild-over li.mega .childcontent,
+.ja-megamenu li.mega li.haschild-over li.mega .childcontent ,
+.ja-megamenu li.mega li.mega li.haschild-over li.mega .childcontent, 
+.ja-megamenu li.mega li.mega li.mega li.haschild-over li.mega .childcontent, 
+.ja-megamenu li.mega li.mega li.mega li.mega li.haschild-over li.mega .childcontent {
+	top: -999em;
+	right: 0 !important;
+}
+
+.ja-megamenu li.haschild-over .childcontent,
+.ja-megamenu li.mega li.haschild-over .childcontent,
+.ja-megamenu li.mega li.mega li.haschild-over .childcontent,
+.ja-megamenu li.mega li.mega li.mega li.haschild-over .childcontent,
+.ja-megamenu li.mega li.mega li.mega li.mega li.haschild-over .childcontent,
+.ja-megamenu li.mega li.mega li.mega li.mega li.mega li.haschild-over .childcontent {
+	top: auto;
+	right: 0 !important;
+}
+
+.ja-megamenu li{
+	position: relative;
+}
+
+.ja-megamenu li li{
+	position: static;
+}
+
+/*Comment*/
+
+.comment-admin {
+	direction: ltr;
+}
+
+.jac-div-footer {
+	direction: ltr;
+}
+
+.jac-div-footer .comment-action div,
+.jac-div-footer .comment-ranking {
+	direction: rtl;
+}
+
+.jac-div-footer .comment-action {
+	width: 50%;
+}
+
+#jac-container-comment {
+	width: 100%;
+}
+
+#jac-wrapper .comment-admin {
+	width: 100px;
+}
+
+#jac-sort {
+	direction: ltr;
+}
+
+.comment-report {
+	direction: rtl;
+}
+
+#jac-container-textarea textarea {
+	left: auto !important;
+	top: -9999em !important;
+}
+
+#jac-container-textarea textarea#newcomment {
+	top: auto !important;
+}
+
+/**/
+
+#k2Container {
+	zoom: 1;
+}
+
+.ja-captcha-img {
+	float: none;
+	zoom: 1;
+}
+
+.itemSocialLinks {
+	direction: ltr;
+}
+
+/**/
+.button2-left {
+	position: static;
+}
+
+.ja-tabs-title {
+	direction: ltr;
+}
+
+/**/
+
+.itemRatingForm {
+	direction: ltr;
+}
+
+.itemRatingForm .ItemRatingList {
+	direction: rtl;
+}
+
+.legend, .legend-hilite {
+	zoom: 1;
+}
+
+/* FOOTER
+--------------------------------------------------------- */
+#ja-poweredby {
+	direction: rtl;
+}
+
+.ja-slidewrap{
+	zoom: 1;
+}

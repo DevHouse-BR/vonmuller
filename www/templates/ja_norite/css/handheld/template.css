@@ -1,0 +1,290 @@
+/*
+# ------------------------------------------------------------------------
+# JA Norite template for Joomla 1.5.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+body#bd {
+	font-size: 10pt;
+	background-color: #1C1C1C;
+}
+
+.contentheading, .componentheading, h1, h2, h3, h4, h5 {
+	line-height: 1.2;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+#ja-main {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: none;
+}
+
+/* JOOMLA STYLE
+--------------------------------------------------------- */
+.article_row { padding: 0; border-bottom: 0; }
+
+.article_column { padding-top: 10px; padding-bottom: 10px; overflow: hidden; }
+
+.blog_more { border-top: 0; }
+
+/* HEADER
+--------------------------------------------------------- */
+#ja-header {
+	padding: 10px 0;
+	border-bottom: 3px solid #890;
+	text-align: center;
+	background-color: #303030;
+}
+
+h1.logo, div.logo-text { float: none; margin: 0 auto;}
+h1.logo a {
+	margin: 0 auto;
+}
+/* NAVIGATION
+--------------------------------------------------------- */
+#ja-mainnav {
+	padding: 10px 0;
+	border-bottom: 3px solid #666;
+	border-top: 0px;
+	text-align: center;
+	position: relative;
+	background-image: none;
+	float: none;
+}
+
+#ja-mainnav .inner {
+	float: none !important;
+	padding: 0 10px !important;
+}
+
+#ja-mainnav select {
+	float: left;
+	margin-left: .5em;
+	width: 65%;
+}
+
+#ja-search {
+	position: static;
+	float: left;
+}
+
+#ja-search .inputbox { padding-left: 22px; width: 75%; }
+#ja-search .inputbox:hover, #ja-search .inputbox:focus { background-color: #fff; }
+
+#ja-search .button { display: none; }
+
+
+#ja-search .inputbox {
+	float: left;
+	padding: 5px 5px 5px 20px;
+	width: 60%;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	color: #101010;
+	margin: 1em;
+	height: auto;
+}
+
+#ja-login fieldset { background-image: none; padding: 0 10px;}
+
+
+#ja-login form #form-login-password label, #ja-login form #form-login-username label, #ja-login #form-login-remember {
+	display:block;
+	color: #000;
+}
+
+#ja-login form .inputbox {
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #101010;
+}
+
+#ja-login form #form-login-password {
+	margin: 0px;
+}
+
+#ja-login form fieldset .button {
+	background: #333 url(../../../ja_ores/css/images/grad1.gif) repeat-x scroll center top;
+	border: 1px solid #333;
+	color: #ccc;
+	cursor: pointer;
+	font-size: 85%;
+	padding: 3px 5px;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+#ja-login form fieldset .button:hover, #ja-login form fieldset .button:focus {
+	background: #333;
+	border: 1px solid #999;
+	color: #fff;
+}
+
+#ja-login form ul li {
+	float: none;
+	padding-left: 5px;
+}
+
+#ja-login form a:hover {
+	color: #890;
+}
+
+/* FOOTER
+--------------------------------------------------------- */
+#ja-footer {
+	border-top: 3px solid #666;
+	font-size: 80%;
+	padding-top: 5px;
+	color: #C5C5C5;
+	padding-bottom: 10px;
+	background-color: #303030;
+}
+
+#ja-footer .inner {
+	padding: 0 10px;
+}
+
+#ja-footer small {
+	text-align: center;
+}
+
+.ja-links {
+	margin-top: 5px;
+	position: static;
+	float: right;
+}
+
+.ja-breadcrums {
+	color: #c5c5c5;
+}
+
+.sublogo {
+	padding-right: 20px;
+	margin: 0px;
+}
+
+.ja-breadcrums a { text-decoration: none; }
+
+.ja-breadcrums a strong, .ja-breadcrums a span { margin: 0 2px; font-weight: bold; }
+
+.ja-copyright { }
+
+/* MISC.
+--------------------------------------------------------- */
+.img_caption, .ja-thumbnailwrap {width: auto !important;}
+
+ul.pagination { float: none; width: 99%; }
+.counter { float: none; text-align: left; width: 99%; }
+.counter span { float: none; }
+
+/* Hide un-necessary elements ---*/
+.buttonheading, a.ja-usersetting-loadform { display: none; }
+
+.ja-navhelper {
+}
+
+.ja-navhelper .inner {
+	margin: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+
+#ja-blog-style .img_caption.left {
+	display: none;	
+}
+
+#ja-blog-style .article-tools, #ja-blog-style .article-contentwrap {
+	float: none !important;
+	width: 100%;
+}
+
+#ja-blog-style .article-tools {
+	position: absolute;
+	top: 70px;
+	left: 0;
+}
+
+#ja-blog-style .article-contentwrap {
+	margin-top: 130px;
+}
+
+#jac-login-joomla-form {
+	width: 90% !important;
+	border-right: 0px !important;
+	float: none !important;
+}
+
+#ja-popup-header-wrap, #ja-popup-content-wrap, #ja-popup-footer-wrap {
+	width: 280px !important;
+}
+
+#ja-popup-wrap {
+	left: 5px !important;
+}
+
+#ja-popup {
+	top: 40px !important;
+}
+
+#JAFrom label{
+	display: block;	
+}
+
+#username, #passwd {
+	width: 150px !important;
+}
+
+#jac-login-rpx {
+	display: none;
+}
+
+/* */
+.haveimage, .article_column .haveimage {
+	padding-left: 0 !important; 
+}
+
+.article-main {
+	clear: both;
+}
+.article-image {
+	position: static;
+}
+
+/* comment */
+#jac-wrapper .comment-report {
+	padding: 0 10px;
+}
+
+/* category layout */
+.article_column {
+	width: 100% !important;
+}
+
+/* item */
+div.ItemImageBlock {
+	float: none !important;
+}
+
+#ja-botsl textarea.inputbox {
+	max-width: 270px;
+}

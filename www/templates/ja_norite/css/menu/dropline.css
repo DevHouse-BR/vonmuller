@@ -1,0 +1,78 @@
+/*
+# ------------------------------------------------------------------------
+# JA Norite template for Joomla 1.5.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+
+/* Son of Suckerfish Dropdowns
+---------------------------------------------------------
+Originally developed by Patrick Griffiths and Dan Webb
+http://www.htmldog.com/articles/suckerfish/dropdowns/
+---------------------------------------------------------
+NOTE: After a deep research, we decide to divide this
+CSS into 2 parts. The first part will define the layout.
+The second part will define the visual look for this menu.
+---------------------------------------------------------*/
+
+.ja-home #jasdl-mainnav {
+	background: url(../../images/mainnav-sep.gif) no-repeat bottom right;
+}
+
+#jasdl-mainnav {
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#jasdl-mainnav ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#jasdl-mainnav li {
+	background: url(../../images/mainnav-sep.gif) no-repeat bottom left;
+	float: left;
+	margin: 0;
+	padding: 0 0 0 2px;
+	cursor: pointer;
+}
+
+#jasdl-mainnav a {
+	color: #656565;
+	display: block;
+	font-size: 110%;
+	font-weight: bold;
+	line-height: normal;
+	margin: 0;
+	padding: 13px 15px;
+	text-decoration: none;
+}
+
+#jasdl-mainnav a:hover,
+#jasdl-mainnav ul li.hover a {
+	color: #890;
+}
+
+#jasdl-mainnav li.active a,
+#jasdl-mainnav li.active a:hover,
+#jasdl-mainnav li.active a:active,
+#jasdl-mainnav li.active a:focus {
+	background: url(../../images/mainnav-active.gif) no-repeat center bottom;
+	color: #fff;
+}
+
+#jasdl-subnav .first-item { border-left: 0; }
+
+#jasdl-subnav { display: none; }

@@ -1,0 +1,116 @@
+/*
+# ------------------------------------------------------------------------
+# JA Norite template for Joomla 1.5.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+.article_column { overflow: hidden; }
+
+.ja-col .ja-box-ct { overflow: hidden; width: 100%; }
+
+#ja-mainnav,
+#ja-splitmenu a:hover,
+#ja-splitmenu a:active,
+#ja-splitmenu a:focus,
+#ja-splitmenu li.active a,
+#ja-splitmenu li.active a:hover,
+#ja-splitmenu li.active a:active,
+#ja-splitmenu li.active a:focus,
+#ja-cssmenu li:hover,
+#ja-cssmenu li.sfhover,
+#ja-cssmenu li.havechildsfhover,
+#ja-cssmenu li.havechild-activesfhover,
+#ja-cssmenu li a.active,
+#ja-cssmenu li a.active:hover,
+#ja-cssmenu li a.active:active,
+#ja-cssmenu li a.active:focus,
+#jasdl-mainnav a:hover,
+#jasdl-mainnav ul li.hover a,
+#jasdl-mainnav li.active a,
+#jasdl-mainnav li.active a:hover,
+#jasdl-mainnav li.active a:active,
+#jasdl-mainnav li.active a:focus,
+ul.level0 li.over, ul.level0 li.haschild-over,
+ul.level0 li.active { background-image: none !important; }
+
+ul.level1 li.haschild, ul.level1 li.haschild-over { width: 100%; }
+
+#ja-login { width: 365px; }
+
+#ja-container ul.menu li a, blockquote.testimonial span.author { background-color: #fff; }
+
+/* 3 Columns - Classic Layout ---*/
+#ja-container.ja-l1r1 #ja-main .inner { margin-left: 1px; margin-right: 1px; }
+
+#ja-container.ja-l1r1 .ja-l1 .ja-col-inner { margin-left: 1px; margin-right: 0; }
+
+#ja-container.ja-l1r1 .ja-r1 .ja-col-inner { margin-left: 0; margin-right: 1px; }
+
+/* 3 Columns - 2 Columns Left Layout  ---*/
+#ja-container.ja-l2 #ja-main .inner { margin-left: 1px; margin-right: 1px; }
+
+#ja-container.ja-l2 .ja-left1 .ja-col-inner { margin-left: 1px; margin-right: 0; }
+
+#ja-container.ja-l2 .ja-left2 .ja-col-inner { margin-left: 1px; margin-right: 0; }
+
+/* 3 Columns - 2 Columns Right Layout [Default] ---*/
+#ja-container.ja-r2 #ja-main .inner { margin-left: 1px; margin-right: 1px; }
+
+#ja-container.ja-r2 .ja-right1 .ja-col-inner { margin-left: 0; margin-right: 1px; }
+
+#ja-container.ja-r2 .ja-right2 .ja-col-inner { margin-left: 0; margin-right: 1px; }
+
+/* Full left */
+#ja-container.ja-r1 #ja-main .inner { margin-left: 1px; margin-right: 1px; }
+
+#ja-container.ja-r1 .ja-r1 .ja-col-inner { margin-left: 0; margin-right: 1px; }
+
+/* Full right */
+#ja-container.ja-l1 #ja-main .inner { margin-left: 1px; margin-right: 1px; }
+
+#ja-container.ja-l1 .ja-l1 .ja-col-inner { margin-left: 1px; margin-right: 0; }
+
+#ja-content, #ja-current-content { overflow: hidden !important; }
+
+/* JA Slideshow */
+#ja-slideshow-case, .ja-slideshowimage,
+#ja-slideshow-case .ja-slideshowimage img { width: 568px !important; }
+
+/* User Tools */
+ul.ja-usertools-font { right: 390px; top: 20px; }
+
+ul.ja-usertools-screen { right: 390px; top: 40px; }
+
+ul.pagination a {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* Megamenu ---*/
+.childcontent .top, .childcontent .ml, .childcontent .mr, .childcontent .bot { display: none !important; }
+ul.level1 li.mega { width: 100%; }
+
+/* 
+------------------------------------Hack png */
+h1.logo a {
+ 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='templates/ja_norite/images/logo2.png', sizingMethod='scale')!important;
+ 	background-image: none!important;
+}
+
+.maskDesc {
+ 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='templates/ja_ores/images/shadow.png', sizingMethod='scale')!important;
+ 	background-image: none!important;
+}
+
+.ja-slide-item {
+ 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='templates/ja_ores/images/window.png', sizingMethod='scale')!important;
+ 	background-image: none!important;
+}
