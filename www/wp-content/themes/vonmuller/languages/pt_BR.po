@@ -1,0 +1,732 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Traducao VonMuller\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-15 13:34-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Leonardo <leonardo@devhouse.com.br>\n"
+"Language-Team: DevHouse - Leonardo <leonardo@devhouse.com.br>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: /var/www/wp-content/themes/vonmuller\n"
+
+#: /var/www/wp-content/themes/vonmuller/archive.php:31
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/archive.php:33
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/archive.php:35
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/archive.php:37
+msgid "Category: "
+msgstr "Categoria"
+
+#: /var/www/wp-content/themes/vonmuller/archive.php:56
+msgid "Blog Archives"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/bottom.php:75
+msgid "Up"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/loop-attachment.php:29
+#, php-format
+msgid "<a class=\"ico_link date\" href=\"%1$s\" rel=\"bookmark\">%3$s</a> <a class=\"ico_link author\" href=\"%4$s\" title=\"%5$s\">%6$s</a>"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/loop-attachment.php:41
+msgid "Leave a comment"
+msgstr "Deixe um comentário"
+
+#: /var/www/wp-content/themes/vonmuller/loop-attachment.php:41
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+#: /var/www/wp-content/themes/vonmuller/loop-attachment.php:41
+msgid "% Comments"
+msgstr "% Comentários"
+
+#: /var/www/wp-content/themes/vonmuller/loop-attachment.php:45
+msgid "Edit"
+msgstr "Editar"
+
+#: /var/www/wp-content/themes/vonmuller/loop-attachment.php:136
+msgid "Pages:"
+msgstr "Páginas"
+
+#: /var/www/wp-content/themes/vonmuller/contact-form.php:9
+msgid "Feedback"
+msgstr "Entre em contato"
+
+#: /var/www/wp-content/themes/vonmuller/contact-form.php:13
+msgid "Your message has been sent."
+msgstr "Sua mensagem foi enviada."
+
+#: /var/www/wp-content/themes/vonmuller/contact-form.php:21
+msgid "Your name"
+msgstr "Seu nome"
+
+#: /var/www/wp-content/themes/vonmuller/contact-form.php:22
+msgid "E-mail"
+msgstr "E-mail"
+
+#: /var/www/wp-content/themes/vonmuller/contact-form.php:23
+msgid "Message"
+msgstr "Mensagem"
+
+#: /var/www/wp-content/themes/vonmuller/contact-form.php:27
+msgid "Submit"
+msgstr "Enviar"
+
+#: /var/www/wp-content/themes/vonmuller/contact-form.php:30
+msgid "Clear"
+msgstr "Limpar"
+
+#: /var/www/wp-content/themes/vonmuller/dt-pagenavi.php:11
+msgid "Page %CURRENT_PAGE% of %TOTAL_PAGES%"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/dt-pagenavi.php:14
+msgid "&laquo; First"
+msgstr "&laquo; Primeiro"
+
+#: /var/www/wp-content/themes/vonmuller/dt-pagenavi.php:15
+msgid "Last &raquo;"
+msgstr "Último &raquo;"
+
+#: /var/www/wp-content/themes/vonmuller/dt-pagenavi.php:16
+msgid "Newer posts"
+msgstr "Posts mais novos"
+
+#: /var/www/wp-content/themes/vonmuller/dt-pagenavi.php:17
+msgid "Older posts"
+msgstr "Posts mais antigos"
+
+#: /var/www/wp-content/themes/vonmuller/comments-form.php:24
+msgid "Share a comment"
+msgstr "Deixe um comentário"
+
+#: /var/www/wp-content/themes/vonmuller/comments-form.php:27
+msgid "You are currently logged in as"
+msgstr "Você está atualmente logado como"
+
+#: /var/www/wp-content/themes/vonmuller/comments-form.php:29
+msgid "Your email address will not be published. Required fields are marked"
+msgstr "Seu endereço de email não será publicado. Campos obrigatórios estão marcados com "
+
+#: /var/www/wp-content/themes/vonmuller/comments-form.php:37
+msgid "Name"
+msgstr "Nome"
+
+#: /var/www/wp-content/themes/vonmuller/comments-form.php:46
+msgid "Comment"
+msgstr "Comentário"
+
+#: /var/www/wp-content/themes/vonmuller/comments-form.php:50
+msgid "Add comment"
+msgstr "Adicionar Comentário"
+
+#: /var/www/wp-content/themes/vonmuller/comments-form.php:52
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: /var/www/wp-content/themes/vonmuller/functions.php:71
+msgid "Primary Navigation"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/gallery-album-display.php:20
+#: /var/www/wp-content/themes/vonmuller/gallery-plus-album-display.php:59
+msgid "View pictures"
+msgstr "Ver fotos"
+
+#: /var/www/wp-content/themes/vonmuller/comments-print.php:47
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/comments-print.php:75
+msgid "Pingback:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/comments-print.php:75
+msgid "(Edit)"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/comments-print.php:88
+#: /var/www/wp-content/themes/vonmuller/comments-print.php:104
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/comments-print.php:89
+#: /var/www/wp-content/themes/vonmuller/comments-print.php:105
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/comments.php:2
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/gallery-plus-photos-display.php:5
+#: /var/www/wp-content/themes/vonmuller/gallery-plus-photos-display.php:44
+#: /var/www/wp-content/themes/vonmuller/gallery-photos-display.php:7
+#: /var/www/wp-content/themes/vonmuller/gallery-photos-display.php:44
+msgid "Back"
+msgstr "Voltar"
+
+#: /var/www/wp-content/themes/vonmuller/home-static.php:28
+#: /var/www/wp-content/themes/vonmuller/home-video.php:107
+msgid "Details"
+msgstr "Detalhes"
+
+#: /var/www/wp-content/themes/vonmuller/top-search-form.php:2
+msgid "Wanna find something?"
+msgstr "Procurando por algo?"
+
+#: /var/www/wp-content/themes/vonmuller/loop-blog.php:55
+#: /var/www/wp-content/themes/vonmuller/loop-blog.php:58
+msgid "<span><i></i>read more</span>"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/loop-blog.php:66
+msgid "launch link"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultados de busca para: %s"
+
+#: /var/www/wp-content/themes/vonmuller/search.php:35
+msgid "Nothing Found"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/get_in_touch.php:69
+#: /var/www/wp-content/themes/vonmuller/widgets/popular.php:103
+#: /var/www/wp-content/themes/vonmuller/widgets/text_and_photo.php:86
+#: /var/www/wp-content/themes/vonmuller/widgets/latest_photos.php:122
+#: /var/www/wp-content/themes/vonmuller/widgets/twitter.php:159
+#: /var/www/wp-content/themes/vonmuller/widgets/categories.php:78
+#: /var/www/wp-content/themes/vonmuller/widgets/post_types.php:98
+msgid "Title:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/get_in_touch.php:73
+#: /var/www/wp-content/themes/vonmuller/widgets/text_and_photo.php:91
+msgid "Text:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/popular.php:107
+msgid "Category:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/popular.php:118
+#: /var/www/wp-content/themes/vonmuller/widgets/latest_photos.php:127
+#: /var/www/wp-content/themes/vonmuller/widgets/twitter.php:163
+msgid "Show:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/text_and_photo.php:17
+msgid "A widget with some text and photo"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/text_and_photo.php:23
+msgid " Text & Photo"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/text_and_photo.php:76
+msgid "Text & Photo"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/text_and_photo.php:96
+msgid "Image:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/latest_photos.php:22
+msgid "A widget with photos from your albums"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/latest_photos.php:28
+msgid " Photos"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/latest_photos.php:137
+msgid "How many:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/twitter.php:155
+msgid "Account:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/twitter.php:167
+msgid "Update interval (secs):"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/categories.php:82
+msgid "Columns:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/widget-twitter.php:5
+msgid "Displays your tweets"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/widget-twitter.php:6
+msgid "Twitter"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/widget-twitter.php:97
+msgid "Title"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/widget-twitter.php:98
+msgid "Username"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/widget-twitter.php:99
+msgid "Number of Twitts"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/widgets/widget-twitter.php:100
+msgid "Text Link"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/settings/00_settings.php:38
+msgid " &mdash; "
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/settings/00_settings.php:41
+msgid "Options saved"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:8
+msgid "Photo Albums"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:9
+msgid "Album"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:10
+msgid "Edit Album"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:11
+msgid "Add New Album"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:12
+msgid "New Album Name"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:36
+msgid "Search in Category"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:37
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:44
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:42
+msgid "Categories"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:38
+msgid "Parent Category"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:39
+msgid "Parent Category:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:40
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:45
+msgid "Edit Category"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:41
+msgid "Update Category"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:42
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:46
+msgid "Add New Category"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:43
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:47
+msgid "New Category Name"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:66
+msgid "Gallery Options"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_gallery_plus.php:87
+msgid "exclude featured image from gallery"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/10_other.php:19
+msgid "read more"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:56
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:230
+msgid "Next page"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:57
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:231
+msgid "Previous page"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:100
+msgid "View all pictures"
+msgstr "Ver todas as fotos"
+
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:320
+msgid "camera"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:322
+msgid "aperture"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:324
+msgid "focal_length"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:326
+msgid "ISO"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:330
+msgid "shutter_speed"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/11_shortcode_gallery.php:333
+msgid "created_timestamp"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/03_setup_widgets.php:11
+msgid "Widget area"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/03_setup_widgets.php:13
+msgid "Left block"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:8
+msgid "Portfolio"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:9
+msgid "Work"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:10
+msgid "Edit Work"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:11
+msgid "Add New Work"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:12
+msgid "New Work Name"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:43
+msgid "Category"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/05_portfolio.php:44
+msgid "Popular Categories"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:7
+msgid "Add New Item"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:8
+msgid "Edit Item"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:9
+msgid "New Item"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:10
+msgid "View Item"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:11
+msgid "Search Items"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:12
+msgid "No Items found"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:13
+msgid "No Items found in Trash"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:56
+msgid "Options for Original Slider"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:65
+msgid "Options for New Slider"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:74
+msgid "Options for Static"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:82
+msgid "Options for Video"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:201
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:371
+msgid "Interval (msec)"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:205
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:379
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:521
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:582
+msgid "Hide overlay mask"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:213
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:387
+msgid "All"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:220
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:394
+msgid "Only..."
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:238
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:412
+msgid "Except..."
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:360
+msgid "Transition"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:375
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:503
+msgid "Autoplay"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:493
+msgid "Video url"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:497
+msgid "Upload"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:498
+msgid "Remove"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:509
+msgid "Repeat"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:515
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:578
+msgid "Hide description"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:525
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_home.php:586
+msgid "Details link"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/03_admin.php:13
+msgid "Thumbs"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_portfolio.php:215
+msgid "Portfolio Options"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/functions/04_custom_post_portfolio.php:236
+msgid "hide featured image in details"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/functions/wootumblog_express_app_functions.php:210
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/functions/wootumblog_express_app_functions_deprecated.php:209
+msgid "You are not allowed to upload files to this site."
+msgstr "Você não tem permissão para fazer upload de arquivos para este site."
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/functions/wootumblog_express_app_functions.php:236
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/functions/wootumblog_express_app_functions_deprecated.php:235
+#, php-format
+msgid "Could not write file %1$s (%2$s)"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:152
+msgid "How to add Tumblog functionality to your theme!"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:154
+msgid "Included Template Tags:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:166
+msgid "Twenty Ten example implementation:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:182
+msgid "Woo Tumblog is almost ready."
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:182
+#, php-format
+msgid "You must <a href=\"%1$s\">configure your settings</a> for it to work."
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:190
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:290
+msgid "NOTE\t:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:190
+msgid "You can add the custom tumblog output to your theme by following the instructions in "
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:190
+#, php-format
+msgid "the contextual help in the <a href=\"%1$s\">Tumblog Options</a> page."
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:290
+msgid "Add the tumblog output to your theme by following the instructions in the contextual help menu above."
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:471
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:579
+msgid "Play Audio"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:476
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog.class.php:586
+msgid " ~ "
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:31
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:32
+msgid "Post Formats"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:33
+msgid "Search Post Formats"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:34
+msgid "Popular Post Formats"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:35
+msgid "All Post Formats"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:36
+msgid "Parent Post Formats"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:37
+msgid "Parent Post Formats:"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:38
+msgid "Edit Post Format"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:39
+msgid "Update Post Format"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:40
+msgid "Add New Post Format"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:41
+msgid "New Post Format Name"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:60
+msgid "articles"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:60
+msgid "Articles"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:61
+msgid "images"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:61
+msgid "Images"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:62
+msgid "audio"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:62
+msgid "Audio"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:63
+msgid "video"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:63
+msgid "Video"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:64
+msgid "quotes"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:64
+msgid "Quotes"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:65
+msgid "links"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:65
+msgid "Links"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:101
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_postformat.class.php:330
+msgid "View all Tumblogs"
+msgstr ""
+
+#: /var/www/wp-content/themes/vonmuller/plugins/woo-tumblog/classes/wootumblog_taxonomy.class.php:114
+msgid "Filter"
+msgstr ""
+
