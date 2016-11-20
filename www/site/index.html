@@ -6,12 +6,11 @@
 		<link href="estilo.css" type="text/css" rel="stylesheet" rev="stylesheet" />
 		<script type="text/javascript" src="swfobject.js"></script>
 		<script language="javascript">
-			var wsite;
 			function entrar(){
 				var left = (screen.width/2)-(878/2);
 				var top = (screen.height/2)-(600/2)-20;
 				document.getElementById("intro").innerHTML = '<img src="imagens/logo_intro.jpg">';
-				wsite = window.open('home.html', 'siteWindow', 'height=600,width=878,menubar=no,resizable=no,scrollbars=no,left=' + left + ',top=' + top + ',status=yes,toolbar=no');
+				var wsite = window.open('home.html', '', 'height=600,width=878,menubar=no,resizable=no,scrollbars=no,left=' + left + ',top=' + top + ',status=yes,toolbar=no');
 			}
 		</script>
 	</head>
@@ -34,8 +33,17 @@
 			<br />
 			<br />
 			<div style="color:#666666; font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:11px;">
-				WebMaster: <a href="http://sistemasweb.nr-10.com" target="_blank" style="color:#666666; text-decoration:none;">Leonardo Lima de Vasconcellos</a> | Arte: <a target="_blank" href="mailto:max.logan@hotmail.com" style="color:#666666; text-decoration:none;">Leonardo Vicente</a>
+				Desenvolvido por: <a href="http://www.devhouse.com.br" target="_blank" style="color:#666666; text-decoration:none;">Devhouse</a> | Arte: <a target="_blank" href="mailto:max.logan@hotmail.com" style="color:#666666; text-decoration:none;">Leonardo Vicente</a>
 			</div>
 		</center>
+        <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10185478-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
 	</body>
 </html>

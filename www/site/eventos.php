@@ -6,6 +6,17 @@ if(strlen($pagina) == 0) $pagina = 1;
 
 inicia_pagina();
 constroi_tabela_eventos(12, 3, $pagina);
+?>
+        <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10185478-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<?
 termina_pagina();
 
 
@@ -69,7 +80,7 @@ function constroi_tabela_eventos($numerodedestaques, $colunas, $pagina){
 						<td align="center" valign="top" height="50%"><a href="ver_evento.php?cd=<?=$evento["cd"]?>"><img border="0" src="../<?=$imagem[0]?>"></a></td>
 					</tr>
 					<tr>
-						<td class="menu" height="12" style="text-align: center; font-size:11px;">[<?=date("d/m/Y", $evento["data"])?>] <?=$evento["tipo"]?> de <b><?=$evento["nomes"]?></b></td>
+						<td class="menu" height="12" style="text-align: center; font-size:11px;">[<?=date("d/m/Y", $evento["data"])?>] <?=$evento["tipo"]?> <b><?=$evento["nomes"]?></b></td>
 					</tr>
 				</table>
 				<br /><br />

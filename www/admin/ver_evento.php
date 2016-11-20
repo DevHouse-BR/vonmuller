@@ -1,8 +1,17 @@
 <?php
 require("permissao_documento.php");
+
 include("../funcoes.php");
 $cd_evento = $_GET["cd"];
 admin("inicia_pagina();");
+
+require("../conectar_mysql.php");
+$query = "SELECT * FROM eventos, tipodeevento WHERE eventos.tipo=tipodeevento.cd AND eventos.cd=" . $cd_evento;
+$result = mysql_query($query) or die("Erro de conexão ao banco de dados: " . mysql_error());
+$evento = mysql_fetch_array($result, MYSQL_ASSOC);
+
+
+
 ?>
 <script language="javascript" type="text/javascript">
 	function apagar_evento(codigo){
@@ -11,12 +20,12 @@ admin("inicia_pagina();");
 		}
 	}
 	function caixa(){
-		if(window.confirm("Deseja adicionar todas as fotos na caixa de entrada neste evento?")) window.open("caixa.php?evento=<?=$cd_evento?>");
+		if(window.confirm("Deseja adicionar todas as fotos na caixa de entrada neste evento?")) window.open("caixa.php?evento=<?=$cd_evento?>&fotografo=<?=$evento["fotografo"]?>");
 	}
 </script>
 <? constroi_fotos_evento($cd_evento, 4); ?>
-<a href="javascript: void window.open('wizard_novo_evento.php?modo=altera_destaque&passo=1&codigo_evento=<?=$cd_evento?>', 'EVENTO', 'width=420,height=160,status=no,resizable=no,top=20,left=100,dependent=yes,alwaysRaised=yes');">[Foto de Destaque]</a>&nbsp;&nbsp;
-<a href="javascript: void window.open('wizard_novo_evento.php?modo=adiciona_imagem&passo=3&codigo_evento=<?=$cd_evento?>', 'EVENTO', 'width=420,height=160,status=no,resizable=no,top=20,left=100,dependent=yes,alwaysRaised=yes');">[Adicionar Foto]</a>&nbsp;&nbsp;
+<a href="javascript: void window.open('wizard_novo_evento.php?modo=altera_destaque&passo=1&codigo_evento=<?=$cd_evento?>&fotografo=<?=$evento["fotografo"]?>', 'EVENTO', 'width=420,height=160,status=no,resizable=no,top=20,left=100,dependent=yes,alwaysRaised=yes');">[Foto de Destaque]</a>&nbsp;&nbsp;
+<a href="javascript: void window.open('wizard_novo_evento.php?modo=adiciona_imagem&passo=3&codigo_evento=<?=$cd_evento?>&fotografo=<?=$evento["fotografo"]?>', 'EVENTO', 'width=420,height=160,status=no,resizable=no,top=20,left=100,dependent=yes,alwaysRaised=yes');">[Adicionar Foto]</a>&nbsp;&nbsp;
 <!--<a href="javascript: void window.open('wizard_novo_evento.php?modo=edita_parceiro&passo=4&codigo_evento=<?=$cd_evento?>', 'EVENTO', 'width=420,height=400,status=no,resizable=no,top=20,left=100,dependent=yes,alwaysRaised=yes');">[Editar Parceiros]</a>&nbsp;&nbsp;-->
 <a href="javascript: caixa();">[Caixa de Entrada]</a>&nbsp;&nbsp;
 <a href="javascript: apagar_evento(<?=$cd_evento?>);">[Apagar Evento]</a>
@@ -29,10 +38,6 @@ admin("inicia_pagina();");
 function constroi_fotos_evento($codigo_evento, $colunas){
 	$contador_de_colunas = 0;
 		
-	require("../conectar_mysql.php");
-	$query = "SELECT * FROM eventos, tipodeevento WHERE eventos.tipo=tipodeevento.cd AND eventos.cd=" . $codigo_evento;
-	$result = mysql_query($query) or die("Erro de conexão ao banco de dados: " . mysql_error());
-	$evento = mysql_fetch_array($result, MYSQL_ASSOC);
 	?>
 	<script language="javascript" type="text/javascript">
 		function apagar(codigo){

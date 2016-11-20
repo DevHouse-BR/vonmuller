@@ -5,7 +5,7 @@
 		<title>VonMuller</title>
 		<script type="text/javascript" src="swfobject.js"></script>
 		<style type="text/css">
-			body{margin:0px 0px 0px 0px}
+			body{margin:0px 0px 0px 0px; overflow:hidden}
 		</style>
 	</head>
 	<body>
@@ -19,5 +19,14 @@
 			so.write("monoSlideshow");
 			// ]]>
 		</script>
+                <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10185478-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
 	</body>
 </html>

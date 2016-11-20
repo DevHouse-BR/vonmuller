@@ -1,6 +1,6 @@
 <?php
 //require("permissao_documento.php");
-	function upload_imagem($IMG_ROOT, $imagem_array, $nome, $LARGURA_IMG_FINAL, $ALTURA_IMG_FINAL, $LARGURA_THUMB, $ALTURA_THUMB, $cria_thumb, $WATERMARK){
+	function upload_imagem($IMG_ROOT, $imagem_array, $nome, $LARGURA_IMG_FINAL, $ALTURA_IMG_FINAL, $LARGURA_THUMB, $ALTURA_THUMB, $cria_thumb, $WATERMARK, $fotografo){
 		#####################     Constantes     ###################################################
 		
 		$THUMB_ROOT = "thumb/";	# Diretório onde os thumbnails serão transmitidos
@@ -50,8 +50,21 @@
 			imagecopyresampled($nova_imagem, $imagem_original, 0, 0, 0, 0, $nova_largura_img, $nova_altura_img, $imagem_largura, $imagem_altura) or die($HTML_RETORNO4); 
 			
 			if($WATERMARK){
-				$watermark = imagecreatefrompng("../imagens/watermark.png");
-				imagecopy($nova_imagem, $watermark, ($nova_largura_img - 122), ($nova_altura_img - 57), 0, 0, 122, 57);
+				switch($fotografo){
+					case '0':
+						$watermark = imagecreatefrompng("../imagens/watermark-wander.png");
+						imagecopy($nova_imagem, $watermark, ($nova_largura_img - 455), ($nova_altura_img - 44), 0, 0, 455, 44);
+						break;
+					case '1':
+						$watermark = imagecreatefrompng("../imagens/watermark-vilson.png");
+						imagecopy($nova_imagem, $watermark, ($nova_largura_img - 455), ($nova_altura_img - 44), 0, 0, 455, 44);
+						break;
+					case '2':
+						$watermark = imagecreatefrompng("../imagens/watermark.png");
+						imagecopy($nova_imagem, $watermark, ($nova_largura_img - 122), ($nova_altura_img - 57), 0, 0, 122, 57);
+						break;
+				}
+				
 			}
 						
 			$nova_imagem_grande = $IMG_ROOT . "/" . $nome_da_imagem;

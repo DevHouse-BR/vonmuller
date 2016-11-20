@@ -15,9 +15,19 @@
 		<script type="text/javascript">
 			// <![CDATA[
 			var so = new SWFObject("monoslideshow.swf", "SOmonoSlideshow", "500", "333", "7", "#ffffff");
+			so.addParam("wmode", "transparent");
 			so.addVariable("dataFile", "slideshowxml.php?cd=<?=$_GET["cd"]?>");
 			so.write("monoSlideshow");
 			// ]]>
 		</script>
+                <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10185478-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
 	</body>
 </html>

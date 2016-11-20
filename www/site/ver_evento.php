@@ -26,6 +26,17 @@ if(!$restrito) {
 }
 else decisao2($cd_evento, $restrito);
 //echo("<br><br><hr><br><br>");
+?>
+        <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10185478-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<?
 termina_pagina();
 
 function verifica_senha($codigo){
@@ -140,7 +151,7 @@ function constroi_fotos_evento($codigo_evento, $colunas){
 	<script language="javascript">
 		var w;
 	</script>
-	<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="<? if($evento["status"] == "1") echo("agenda.php"); else echo("eventos.php"); ?>">[<? if($evento["status"] == "1") echo("AGENDA"); else echo("EVENTOS"); ?>]</a>&nbsp;-&nbsp;<a class="menurodape" style="font-weight: normal; font-size: 11px;">[<?=$evento["tipo"]?>&nbsp;de&nbsp;<?=$evento["nomes"]?>]</a>
+	<a style="font-weight: normal; font-size: 11px;" class="menurodape" href="<? if($evento["status"] == "1") echo("agenda.php"); else echo("eventos.php"); ?>">[<? if($evento["status"] == "1") echo("AGENDA"); else echo("EVENTOS"); ?>]</a>&nbsp;-&nbsp;<a class="menurodape" style="font-weight: normal; font-size: 11px;">[<?=$evento["tipo"]?>&nbsp;<?=$evento["nomes"]?>]</a>
 	<hr>
 	<div align="left"><?=$evento["descricao"]?></div>
 	<div align="left">
@@ -153,27 +164,7 @@ function constroi_fotos_evento($codigo_evento, $colunas){
 			<?
 		}
 	?>
-	<div class="titulosecao"><img align="bottom" src="../imagens/bullet_silver.gif">&nbsp;Clique na foto para ampliar</div><br>
-	<div class="titulosecao"><img align="bottom" src="../imagens/bullet_silver.gif">&nbsp;<a href="#" onclick="window.open('../slideshow.php?cd=<?=$codigo_evento?>', null, 'height=333,width=500,status=no,toolbar=no');">Ver Fotos Em Slides</a></div><br>
-	
-	<table width="100%" cellspacing="5" cellpadding="0" border="0"><tr>
-	<?
-	$query = "SELECT cd, path, path_thumb, largura, altura FROM fotos WHERE cd_evento=" . $codigo_evento . " ORDER BY cd";
-	$result = mysql_query($query) or die("Erro de conexão ao banco de dados: " . mysql_error());
-	while($foto = mysql_fetch_array($result, MYSQL_ASSOC)){
-		?>
-		<td align="center" valign="top" class="label" style="text-align: center;">
-			<img style="cursor:pointer;" onClick="javascript: try{w.close();}catch(e){} w = window.open('ver_imagem.php?imagem=<?=urlencode($foto["path"])?>', 'Fotografia', 'width=<?=$foto["largura"]?>,height=<?=$foto["altura"]?>,status=no,resizable=yes,top=30,left=100,dependent=yes,alwaysRaised=yes'); void(0);" src="../<?=$foto["path_thumb"]?>"><br>
-			<?=$foto["descricao"]?>
-		</td>
-		<?
-		$contador_de_colunas++;
-		if($contador_de_colunas >= $colunas){
-			echo("</tr><tr>");
-			$contador_de_colunas = 0;
-		}
-	}
-	?></tr></table>
+	 <iframe frameborder="0" height="340" width="510" src="../slideshow.php?cd=<?=$codigo_evento?>"></iframe>
 	<?
 	require("desconectar_mysql.php");
 }

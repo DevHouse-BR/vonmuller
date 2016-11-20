@@ -67,7 +67,45 @@ function playSound(som) {
 		document.getElementById(som).Play();
 	}
 }
+/*
+function startGalleryRotation(selector,delay){ 
+	var i = 0; 
+	var layers = $$(selector); 
+	delay = (delay == undefined)? 6000:delay; 
+	setInterval(function(){
+		if(navigator.appName == "Microsoft Internet Explorer"){
+			layers[i].style.display="none"; 
+		}
+		else{
+			layers[i].fade('out'); 
+		}
+		i = (i == layers.length-1)? 0 : i+1;
+		if(navigator.appName == "Microsoft Internet Explorer"){
+			layers[i].style.display=""; 
+		}
+		else{
+			layers[i].fade('in'); 
+		}
+		
+		//layers[i].fade('in');
+		//layers[i].style.filter="";
+		
+	},delay); 
+} 
+
+*/
 function abertura(){
+	/*
+var layers = $$('#noiva img');
+
+for(var i=1; i<layers.length; i++){
+	if(navigator.appName != "Microsoft Internet Explorer"){
+		layers[i].style.opacity=0; 
+		layers[i].style.display=""; 
+	}
+}
+
+startGalleryRotation('#noiva img',10000); */
 	document.getElementById("img_loading").style.display = "none";
 	document.getElementById("loading").style.display = "none";
 	start = 878;
@@ -87,7 +125,14 @@ function entra_frame_border(){
 		obj.style.left = end;
 		inter = 0;
 		
-		// Logo
+		// Logo Books
+		/*start = -258;
+		end = 5;
+		step = 20;
+		obj = document.getElementById("logo");
+		obj.style.left = start + "px";
+		playSound("zum");
+		inter = setInterval("entra_logo()", 20);*/
 		start = -176;
 		end = 35;
 		step = 20;
@@ -208,4 +253,21 @@ function ir(pagina, opcao_menu){
 	img.height = 0;
 	playSound("click");
 	navegacao.location = pagina;
+	var logo = document.getElementById('logo');
+	if(opcao_menu == 'books'){
+		logo.style.top = '8px';
+		logo.style.backgroundImage = 'url(imagens/logo-books.png)';
+		logo.style.backgroundRepeat = 'no-repeat';
+		logo.style.width = '258px';
+		logo.style.height = '68px';
+		logo.style.left = '5px';
+	}
+	else{
+		logo.style.top = '11px';
+		logo.style.backgroundImage = 'url(imagens/logo.png)';
+		logo.style.backgroundRepeat = 'no-repeat';
+		logo.style.width = '176px';
+		logo.style.height = '121px';
+		logo.style.left = '35px';
+	}
 }

@@ -42,19 +42,27 @@ body{
 	position: absolute;
 	/*left:0px;*/
 	top:136px;
-	background-image:url(imagens/noiva.png);
+	/*background-image:url(imagens/noiva.png);*/
 	width:334px;
 	height:465px;
 	left: -334px;
 }
 #logo{
 	position: absolute;
-	/*left:35px;*/
 	top:11px;
 	background-image:url(imagens/logo.png);
 	width:176px;
 	height:121px;
 	left: -176px;
+	/*
+	Logo Books:
+	position: absolute;
+	top:8px;
+	background-image:url(imagens/logo.png);
+	background-repeat:no-repeat;
+	width:258px;
+	height:68px;
+	left: -258px;*/
 }
 #topo{
 	position: absolute;

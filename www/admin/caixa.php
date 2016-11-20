@@ -3,6 +3,7 @@ error_reporting(E_ALL);
 $THUMB_ROOT = "thumb/";
 $IMG_ROOT = "fotos";
 $evento = $_GET["evento"];
+$fotografo = $_GET["fotografo"];
 if(strlen($evento) == 0) die("Informe o codigo do evento.");
 $numero = rand();
 $LARGURA_IMG_FINAL = 500;
@@ -74,9 +75,21 @@ if (count($arrayArquivos) > 0) {
 			$nova_imagem = imagecreatetruecolor($nova_largura_img,$nova_altura_img) or die($HTML_RETORNO3); 
 			imagecopyresampled($nova_imagem, $imagem_original, 0, 0, 0, 0, $nova_largura_img, $nova_altura_img, $imagem_largura, $imagem_altura) or die($HTML_RETORNO4 . " - Posicao 1 = Nome do arquivo: " . $arquivo); 
 			
-			$watermark = imagecreatefrompng("../imagens/watermark.png");
-			imagecopy($nova_imagem, $watermark, ($nova_largura_img - 122), ($nova_altura_img - 57), 0, 0, 122, 57);
 
+			switch($fotografo){
+				case '0':
+					$watermark = imagecreatefrompng("../imagens/watermark-wander.png");
+					imagecopy($nova_imagem, $watermark, ($nova_largura_img - 455), ($nova_altura_img - 44), 0, 0, 455, 44);
+					break;
+				case '1':
+					$watermark = imagecreatefrompng("../imagens/watermark-vilson.png");
+					imagecopy($nova_imagem, $watermark, ($nova_largura_img - 455), ($nova_altura_img - 44), 0, 0, 455, 44);
+					break;
+				case '2':
+					$watermark = imagecreatefrompng("../imagens/watermark.png");
+					imagecopy($nova_imagem, $watermark, ($nova_largura_img - 122), ($nova_altura_img - 57), 0, 0, 122, 57);
+					break;
+			}
 						
 			$nova_imagem_grande = $IMG_ROOT . "/" . $nome_da_imagem;
 			

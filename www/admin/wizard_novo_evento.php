@@ -33,10 +33,10 @@ function constroi_passo0(){
 	if($modo == "update"){
 		$update = true;
 		require("../conectar_mysql.php");
-		$query = "SELECT cd, nomes, data, local, descricao, email, tipo, status, listadecasamento from eventos where cd=" . $codigo;
+		$query = "SELECT cd, nomes, data, local, descricao, email, tipo, status, fotografo, listadecasamento from eventos where cd=" . $codigo;
 		$result = mysql_query($query) or die("Erro de conexão ao banco de dados: " . mysql_error());
 		$evento = mysql_fetch_array($result, MYSQL_ASSOC);
-		require("../conectar_mysql.php");
+		//die(print_r($evento));
 	}
 	strlen($evento["email"]);
 	?>
@@ -64,6 +64,7 @@ function constroi_passo0(){
 					<td class="label">Tipo:</td>
 					<td><select name="tipo">
 					<?php
+						//die('update=' . $update . ' / evento-tipo=' . $evento["tipo"]);
 						$query = "SELECT * FROM tipodeevento ORDER BY tipo";
 						require("../conectar_mysql.php");
 						$result = mysql_query($query) or die("Erro na consulta ao Banco de dados: " . mysql_error());
@@ -84,6 +85,17 @@ function constroi_passo0(){
 							<option value="1"<? if(($update) && ($evento["status"] == 1)) echo(" selected"); ?>>Agenda</option>
 							<option value="2"<? if(($update) && ($evento["status"] == 2)) echo(" selected"); ?>>Desativado</option>
 							<option value="3"<? if(($update) && ($evento["status"] == 3)) echo(" selected"); ?>>Em Aprovação</option>
+                            <option value="4"<? if(($update) && ($evento["status"] == 4)) echo(" selected"); ?>>Book Fotográfico</option>
+						</select>
+					</td>
+				</tr>
+                <tr>
+					<td class="label">Fotógrafo:</td>
+					<td>
+						<select name="fotografo">
+                       		<option value="2"<? if(($update) && ($evento["fotografo"] == 2)) echo(" selected"); ?>>VonMuller Fotografias</option>
+							<option value="0"<? if(($update) && ($evento["fotografo"] == 0)) echo(" selected"); ?>>Wander</option>
+							<option value="1"<? if(($update) && ($evento["fotografo"] == 1)) echo(" selected"); ?>>Vilson</option>
 						</select>
 					</td>
 				</tr>
@@ -99,10 +111,10 @@ function constroi_passo0(){
 					<td class="label">Local:</td>
 					<td><input type="text" name="local" maxlength="255" size="40"<? if($update) echo(' value="' . $evento["local"] . '"');?>></td>
 				</tr>
-				<tr>
+				<!--<tr>
 					<td class="label">Lista de Presentes:</td>
 					<td><input type="text" name="listadecasamento" maxlength="255" size="40"<? if($update) echo(' value="' . $evento["listadecasamento"] . '"');?>></td>
-				</tr>
+				</tr>-->
 				<tr>
 					<td class="label">Descricao:</td>
 					<td><textarea name="descricao" rows="3" cols="30" onKeyUp="contador1.innerHTML = 'Quantidade de Caracteres: ' + this.value.length;" onKeyDown="if ((this.value.length > 254) && (event.keyCode != 8) && (event.keyCode != 46)  && (event.keyCode != 37)  && (event.keyCode != 38)  && (event.keyCode != 39)  && (event.keyCode != 40)) return false;"><? if($update) echo($evento["descricao"]);?></textarea><div class="label" id="contador1">Quantidade de Caracteres: 0</div></td>
@@ -160,6 +172,7 @@ function constroi_passo1(){
 	$cd = $_REQUEST["codigo_evento"];
 	$email = $_POST["email"];
 	$status = $_POST["status"];
+	$fotografo = $_POST["fotografo"];
 	$pginicial = $_POST["pginicial"];
 	$listadecasamento = $_POST["listadecasamento"];
 	
@@ -175,7 +188,7 @@ function constroi_passo1(){
 	$data = mktime( 0, 0, 0, $tmp[1], $tmp[0], $tmp[2]);
 	
 	if ($modo == "add")	{
-		$query = "INSERT INTO eventos (nomes, data, local, descricao, email, senha, tipo, status, pginicial, listadecasamento) VALUES ('";
+		$query = "INSERT INTO eventos (nomes, data, local, descricao, email, senha, tipo, status, fotografo, pginicial, listadecasamento) VALUES ('";
 		$query .= $nomes ."','";
 		$query .= $data ."','";
 		$query .= $local ."','";
@@ -183,7 +196,8 @@ function constroi_passo1(){
 		$query .= $email ."','";
 		$query .= $senha . "', ";
 		$query .= $tipo . ", ";
-		$query .= $status . ", '";
+		$query .= $status . ", ";
+		$query .= $fotografo . ", '";
 		$query .= $pginicial . "', '";
 		$query .= $listadecasamento . "')";
 	}
@@ -204,6 +218,7 @@ function constroi_passo1(){
 		$query .= "email='" . $email ."', ";
 		$query .= "senha='" . $senha ."', ";
 		$query .= "status='" . $status ."', ";
+		$query .= "fotografo='" . $fotografo ."', ";
 		$query .= "listadecasamento='" . $listadecasamento ."', ";
 		$query .= "pginicial='" . $pginicial ."' ";
 		$query .= " WHERE cd=" . $cd;
@@ -251,6 +266,7 @@ function constroi_passo1(){
 				<input type="hidden" name="destaque" value="sim">
 				<input type="hidden" name="codigo_evento" value="<?=$cd?>">
 				<input type="hidden" name="modo" value="<?=$modo?>">
+                <input type="hidden" name="fotografo" value="<?=$fotografo?>">
 				</FORM>
 			</table>
 		</body>
@@ -263,6 +279,7 @@ function constroi_passo1(){
 function constroi_passo2(){
 	$modo = $_REQUEST["modo"];
 	$codigo_evento = $_REQUEST["codigo_evento"];
+	$fotografo = $_REQUEST["fotografo"];
 	require("../conectar_mysql.php");
 	
 	if($modo == "altera_destaque") {
@@ -282,7 +299,7 @@ function constroi_passo2(){
 	if($_POST["watermark"] == "on") $watermark = true;
 	else $watermark = false;
 	
-	$info_imagem = upload_imagem($pasta, $arquivo, $nome_arquivo, 500, 333, 120, 90, true, $watermark);
+	$info_imagem = upload_imagem($pasta, $arquivo, $nome_arquivo, 500, 333, 120, 90, true, $watermark, $fotografo);
 	
 	$query = "INSERT INTO fotos (path, path_thumb, cd_evento, bytes, largura, altura) VALUES ('";
 	$query .= $info_imagem[0] ."','";
@@ -338,6 +355,7 @@ function constroi_passo2(){
 								<input type="submit" value="Próximo >>">
 								<input type="hidden" name="passo" value="5">
 								<input type="hidden" name="codigo_evento" value="<?=$codigo_evento?>">
+                                 <input type="hidden" name="fotografo" value="<?=$fotografo?>">
 							</form>
 						</td>
 					</tr>
@@ -356,6 +374,7 @@ function constroi_passo2(){
 function constroi_passo3(){
 	$codigo_evento = $_REQUEST["codigo_evento"];
 	$modo = $_REQUEST["modo"];
+	$fotografo = $_REQUEST["fotografo"];
 	
 	if($_POST["numero_imagem"] == ""){
 		require("../conectar_mysql.php");
@@ -392,6 +411,7 @@ function constroi_passo3(){
 				<input type="hidden" name="destaque" value="nao">
 				<input type="hidden" name="modo" value="<?=$modo?>">
 				<input type="hidden" name="codigo_evento" value="<?=$codigo_evento?>">
+                <input type="hidden" name="fotografo" value="<?=$fotografo?>">
 				</FORM>
 			</table>
 		</body>
